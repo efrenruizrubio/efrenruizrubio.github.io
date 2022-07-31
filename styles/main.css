@@ -280,8 +280,66 @@ body {
 }
 
 .work {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 	width: 90%;
 	min-width: 288px;
+}
+
+.work__card {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 80%;
+	min-width: 256px;
+	padding: 16px;
+	margin-bottom: 2rem;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.work__card__title {
+	font-size: 1.8rem;
+	font-family: "Roboto mono", monospace;
+}
+
+.work__card__title a {
+	text-decoration: none;
+	color: var(--primary-green-color);
+}
+
+.work__card__description {
+	font-size: 1.6rem;
+	margin: 2rem 0;
+	font-family: "Ubuntu", sans-serif;
+	color: var(--secondary-grey-color);
+}
+
+.card-1 {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
+		url("https://i.postimg.cc/2y4K67s2/facturas.png");
+}
+.card-2 {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
+		url("https://i.postimg.cc/HWFHBbQx/blog.png");
+}
+.card-3 {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
+		url("https://i.postimg.cc/PJSDn2hB/batatabit.png");
+}
+
+.work__card__list {
+	display: grid;
+	gap: 1.5rem;
+	grid-template-columns: repeat(3, max-content);
+	grid-auto-rows: max-content;
+	list-style: none;
+}
+
+.work__card__list__element {
+	color: var(--primary-blue-color);
 }
 
 .contact {
