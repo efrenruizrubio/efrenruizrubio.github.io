@@ -23,6 +23,11 @@ body {
 	background-color: var(--primary-background-color);
 }
 
+a {
+	text-decoration: none;
+	color: var(--primary-green-color);
+}
+
 .header {
 	display: flex;
 	justify-content: space-between;
@@ -32,11 +37,6 @@ body {
 	height: 100px;
 	padding: 0 2.5rem;
 	margin-bottom: 2rem;
-}
-
-.header__img {
-	width: 42px;
-	height: 42px;
 }
 
 .nav-togle {
@@ -123,9 +123,7 @@ body {
 	display: flex;
 	align-self: center;
 	padding: 1rem 4rem;
-	color: var(--primary-green-color);
 	border: 1px solid var(--primary-green-color);
-	text-decoration: none;
 }
 
 .about {
@@ -169,11 +167,6 @@ body {
 	width: max-content;
 	white-space: nowrap;
 	color: var(--primary-blue-color);
-}
-
-.about__link {
-	text-decoration: none;
-	color: var(--primary-green-color);
 }
 
 .about__technologies {
@@ -235,7 +228,18 @@ body {
 	cursor: pointer;
 }
 
+@keyframes fadeEffect {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
 .experience__slider__item {
+	display: none;
+	animation: fadeEffect 1s;
 	width: 80%;
 	min-width: 256px;
 	margin: 0 auto;
@@ -268,11 +272,6 @@ body {
 	color: var(--secondary-grey-color);
 }
 
-.experience__slider__item__list__element a {
-	color: var(--primary-green-color);
-	text-decoration: none;
-}
-
 .experience__slider__item__list__element::before {
 	content: "▹";
 	color: var(--primary-green-color);
@@ -303,11 +302,6 @@ body {
 .work__card__title {
 	font-size: 1.8rem;
 	font-family: "Roboto mono", monospace;
-}
-
-.work__card__title a {
-	text-decoration: none;
-	color: var(--primary-green-color);
 }
 
 .work__card__description {
@@ -343,6 +337,49 @@ body {
 }
 
 .contact {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 	width: 90%;
 	min-width: 288px;
+}
+
+.contact__text {
+	width: 80%;
+	min-width: 256px;
+	font-family: "Ubuntu", sans-serif;
+	color: var(--secondary-grey-color);
+}
+
+.contact__button {
+	display: flex;
+	border-radius: 5px;
+	padding: 10px 20px;
+	margin: 4.5rem 0 10rem;
+	border: 1px solid var(--primary-green-color);
+	font-family: "Roboto mono", monospace;
+}
+
+.footer {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	min-width: 320px;
+	padding: 2rem 0;
+}
+
+.footer__top {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	width: 100%;
+	height: auto;
+	min-width: 320px;
+	margin-bottom: 2rem;
+}
+
+.footer__bottom {
+	text-align: center;
+	font-family: "Roboto mono", monospace;
+	color: var(--secondary-grey-color);
 }

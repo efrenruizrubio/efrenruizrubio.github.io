@@ -16,20 +16,19 @@
 			href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;700&family=Ubuntu:wght@400;500;700&display=swap"
 			rel="stylesheet"
 		/>
-		<link
-			rel="icon"
-			href="https://drive.google.com/uc?export=view&id=1LthDHiAiIJLznOB3gJ0Ui1wN_L_YK3Nf"
-			sizes="42x42"
-		/>
-		<!-- <script type="text/javascript" src="./scripts/main.js" defer></script> -->
+		<link rel="icon" href="./assets/icons/logo.svg" sizes="48x48" />
+		<link rel="icon" href="./assets/icons/logo.svg" sizes="72x72" />
+		<link rel="icon" href="./assets/icons/logo.svg" sizes="96x96" />
 	</head>
 	<body>
 		<header class="header">
 			<img
-				class="header__img"
-				src="https://drive.google.com/uc?export=view&id=1LthDHiAiIJLznOB3gJ0Ui1wN_L_YK3Nf"
-				alt="Mi logo"
+				src="./assets/icons/logo.svg"
+				width="48"
+				height="48"
+				alt="Logo con la letra E"
 			/>
+
 			<button class="nav-togle" aria-label="toggle navigation" type="button">
 				<span class="hamburger"></span>
 			</button>
@@ -70,7 +69,6 @@
 					<br />
 					Currently I'm working on differents projects, one of them is an
 					<a
-						class="about__link"
 						href="https://github.com/efrenruizrubio/intelligent-system"
 						target="_blank"
 						>Expert System</a
@@ -105,14 +103,49 @@
 					<hr />
 				</h2>
 				<div class="experience__slider">
-					<button class="experience__slider__button">Axo Systems</button>
-					<button class="experience__slider__button">
+					<button
+						class="experience__slider__button"
+						onclick="openWork(event, 'Axo')"
+						id="defaultOpen"
+					>
+						Axo Systems
+					</button>
+					<button
+						class="experience__slider__button"
+						onclick="openWork(event, 'Teleperformance')"
+					>
 						Teleperformance Alpha
 					</button>
 				</div>
-				<div class="experience__slider__item">
+				<div class="experience__slider__item" id="Axo">
 					<h3 class="experience__slider__item__title">
 						Developer at Axo Systems
+					</h3>
+					<p class="experience__slider__item__date">Jan 2021 - December 2021</p>
+					<ul class="experience__slider__item__list">
+						<li class="experience__slider__item__list__element">
+							Developed a website for
+							<a href="https://cniconsultores.com/" target="_blank"
+								>CNI Consultores</a
+							>
+							using Wordpress, that it's main purpose is to be a blog to spread
+							information about finance and business, and also works as a
+							platform for selling courses and webinars.
+						</li>
+						<li class="experience__slider__item__list__element">
+							Maintained an existing API developed with PHP hosted in a remote
+							server that allows the communication of a ERP app for CNI
+							Consultores.
+						</li>
+						<li class="experience__slider__item__list__element">
+							Developed components for the frontend of the ERP app using React
+							with Material UI.
+						</li>
+					</ul>
+				</div>
+				<div class="experience__slider__item" id="Teleperformance">
+					<h3 class="experience__slider__item__title">
+						Agent at Teleperformance Alpha
 					</h3>
 					<p class="experience__slider__item__date">Jan 2021 - December 2021</p>
 					<ul class="experience__slider__item__list">
@@ -215,8 +248,54 @@
 					>
 					<hr />
 				</h2>
+				<p class="contact__text">
+					I'm currently looking for a job, so my inbox is always open, feel free
+					to contact me if you have a proposal for a job or if simply you just
+					want to say hello .
+				</p>
+				<a class="contact__button" href="mailto:efren282@outlook.es"
+					>Send me a message</a
+				>
 			</section>
 		</main>
-		<footer class="footer"></footer>
+		<footer class="footer">
+			<div class="footer__top">
+				<a href="https://github.com/efrenruizrubio" target="_blank">
+					<img src="./assets/icons/github-svgrepo-com.svg" alt="GitHub Logo" />
+				</a>
+				<a href="https://www.facebook.com/efren.ruizrubio.31" target="_blank">
+					<img
+						src="./assets/icons/facebook-svgrepo-com.svg"
+						alt="Facebook Logo"
+					/>
+				</a>
+				<a
+					href="https://api.whatsapp.com/send?phone=5213322709940"
+					target="_blank"
+				>
+					<img
+						src="./assets/icons/whatsapp-svgrepo-com.svg"
+						alt="WhatsApp Logo"
+					/>
+				</a>
+				<a href="https://www.linkedin.com/in/efren-ruiz-rubio/" target="_blank">
+					<img
+						src="./assets/icons/linkedin-svgrepo-com.svg"
+						alt="LinkedIn Logo"
+					/>
+				</a>
+			</div>
+			<div class="footer__bottom">
+				<span>Design by</span>
+				<a
+					class="footer__bottom__link"
+					href="https://brittanychiang.com/"
+					target="_blank"
+					>Brittany Chiang.</a
+				>
+				<span>Made by Efr&eacute;n Ru&iacute;z.</span>
+			</div>
+		</footer>
+		<script type="text/javascript" src="./scripts/main.js"></script>
 	</body>
 </html>
