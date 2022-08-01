@@ -1,5 +1,4 @@
 document.getElementById("defaultOpen").click();
-/* document.getElementById("defaultOpen").style.backgroundColor = "red"; */
 
 function openWork(evt, workName){
     var experienceSliderItem, experienceSliderButton;

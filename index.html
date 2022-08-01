@@ -19,26 +19,74 @@
 		<link rel="icon" href="./assets/icons/logo.svg" sizes="48x48" />
 		<link rel="icon" href="./assets/icons/logo.svg" sizes="72x72" />
 		<link rel="icon" href="./assets/icons/logo.svg" sizes="96x96" />
+		<link
+			rel="stylesheet"
+			href="./styles/tablet.css"
+			media="(min-width: 768px)"
+		/>
 		<script type="text/javascript" src="./scripts/workTab.js" defer></script>
 		<script type="text/javascript" src="./scripts/navMenu.js" defer></script>
+		<script type="text/javascript" src="./scripts/getYears.js" defer></script>
 	</head>
 	<body>
 		<header class="header">
 			<img
 				src="./assets/icons/logo.svg"
-				width="48"
-				height="48"
+				class="header__img"
 				alt="Logo con la letra E"
 			/>
-			<nav class="header__nav">
-				<ul>
-					<li>01. <a href="#">About Me</a></li>
-					<li>02. <a href="#">Experience</a></li>
-					<li>03. <a href="#">Work</a></li>
-					<li>04. <a href="#">Contact</a></li>
-				</ul>
-			</nav>
-			<button class="nav-toggle" aria-label="toggle navigation" type="button">
+			<aside class="header__aside">
+				<button
+					class="header__aside__button"
+					type="button"
+					title="Cerrar men&uacute;"
+				></button>
+				<nav class="header__nav">
+					<ul class="header__list">
+						<li class="header__list__item">
+							01. <br /><a
+								class="header__list__item__link"
+								href="#about__section"
+								>About</a
+							>
+						</li>
+
+						<li class="header__list__item">
+							02. <br /><a
+								class="header__list__item__link"
+								href="#experience__section"
+								>Experience</a
+							>
+						</li>
+
+						<li class="header__list__item">
+							03. <br /><a
+								class="header__list__item__link"
+								href="#work__section"
+								>Work</a
+							>
+						</li>
+
+						<li class="header__list__item">
+							04. <br /><a
+								class="header__list__item__link"
+								href="#contact__section"
+								>Contact</a
+							>
+						</li>
+
+						<li class="header__list__item">
+							<a
+								class="header__list__item__button"
+								target="_blank"
+								href="https://firebasestorage.googleapis.com/v0/b/assets-5194e.appspot.com/o/EFR%C3%89N%20RU%C3%8DZ%20RUBIO%20CV.pdf?alt=media&token=002e3264-79fc-4dd3-95bd-e8201d5a7a10"
+								>Resume</a
+							>
+						</li>
+					</ul>
+				</nav>
+			</aside>
+			<button class="nav-toggle" aria-label="Abrir men&uacute;" type="button">
 				<span class="hamburger"></span>
 			</button>
 		</header>
@@ -48,15 +96,16 @@
 				<h1>Efr&eacute;n Ru&iacute;z.</h1>
 				<h2>I'm a Software Engineer focusing on Frontend.</h2>
 				<p>
-					I'm 22 years old and I'm currently studying at the Universidad of
-					Guadalajara, and, at the same time, i'm taking courses at Platzi,
+					I'm <span id="age"></span>
+					years old and I'm currently studying at the Universidad of
+					Guadalajara, and, at the same time, I'm taking courses at Platzi,
 					which helps me to learn new stuff everyday.
 				</p>
 				<a class="introduction__contact-button" href="#contact__section"
 					>Contact</a
 				>
 			</section>
-			<section class="about">
+			<section class="about" id="about__section">
 				<h2 class="numbered-topic">
 					01.&nbsp;&nbsp;<span class="numbered-topic__text"
 						>About Me&nbsp;</span
@@ -102,7 +151,7 @@
 					alt="Foto de Efrén con su novia"
 				/>
 			</section>
-			<section class="experience">
+			<section class="experience" id="experience__section">
 				<h2 class="numbered-topic">
 					02.&nbsp;&nbsp;<span class="numbered-topic__text"
 						>Where I've Worked&nbsp;</span
@@ -114,12 +163,14 @@
 						class="experience__slider__button"
 						onclick="openWork(event, 'Axo')"
 						id="defaultOpen"
+						type="button"
 					>
 						Axo Systems
 					</button>
 					<button
 						class="experience__slider__button"
 						onclick="openWork(event, 'Teleperformance')"
+						type="button"
 					>
 						Teleperformance Alpha
 					</button>
@@ -168,7 +219,7 @@
 					</ul>
 				</div>
 			</section>
-			<section class="work">
+			<section class="work" id="work__section">
 				<h2 class="numbered-topic">
 					03.&nbsp;&nbsp;<span class="numbered-topic__text"
 						>Some Things I've Built&nbsp;</span
