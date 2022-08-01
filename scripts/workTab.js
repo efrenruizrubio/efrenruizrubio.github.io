@@ -1,4 +1,5 @@
 document.getElementById("defaultOpen").click();
+/* document.getElementById("defaultOpen").style.backgroundColor = "red"; */
 
 function openWork(evt, workName){
     var experienceSliderItem, experienceSliderButton;
@@ -6,10 +7,12 @@ function openWork(evt, workName){
     for(let i = 0; i < experienceSliderItem.length; i++){
         experienceSliderItem[i].style.display = "none";
     }
+
     experienceSliderButton = document.getElementsByClassName("experience__slider__button");
     for(let i = 0; i < experienceSliderButton.length; i++){
         experienceSliderButton[i].className = experienceSliderButton[i].className.replace(" active", "");
     }
+
     document.getElementById(workName).style.display = "block";
     evt.currentTarget.className += " active";
 }

@@ -16,6 +16,7 @@
 
 html {
 	font-size: 62.5%;
+	scroll-behavior: smooth;
 }
 
 body {
@@ -26,6 +27,10 @@ body {
 a {
 	text-decoration: none;
 	color: var(--primary-green-color);
+}
+
+ul {
+	list-style: none;
 }
 
 .header {
@@ -39,12 +44,20 @@ a {
 	margin-bottom: 2rem;
 }
 
-.nav-togle {
+.nav-toggle {
 	padding: 0.5rem;
 	background: transparent;
 	border: 0;
 	cursor: pointer;
 	z-index: 1000;
+}
+
+.header__nav {
+	display: none;
+}
+
+.nav-open .header__nav {
+	display: block;
 }
 
 .hamburger {
@@ -124,6 +137,7 @@ a {
 	align-self: center;
 	padding: 1rem 4rem;
 	border: 1px solid var(--primary-green-color);
+	border-radius: 5px;
 }
 
 .about {
@@ -179,7 +193,6 @@ a {
 	min-width: 288px;
 	margin: 10px 0;
 	padding: 0 16px;
-	list-style-type: none;
 }
 
 .about__technologies__item {
@@ -219,13 +232,20 @@ a {
 	min-width: 150px;
 	height: 50px;
 	color: var(--secondary-grey-color);
-	background-color: transparent;
 	scroll-snap-align: center;
-	border: none;
+	border-top: none;
 	border-left: 1px solid var(--secondary-grey-color);
 	border-right: 1px solid var(--secondary-grey-color);
 	border-bottom: 1px solid var(--secondary-grey-color);
+	background-color: transparent;
 	cursor: pointer;
+}
+
+.experience__slider__button.active {
+	border-left: 1px solid var(--primary-green-color);
+	border-bottom: 1px solid var(--primary-green-color);
+	color: var(--primary-green-color);
+	background-color: var(--border-color);
 }
 
 @keyframes fadeEffect {
@@ -262,7 +282,6 @@ a {
 	width: 80%;
 	min-width: 256px;
 	margin: 20px 0;
-	list-style: none;
 	font-family: "Ubuntu", sans-serif;
 }
 
@@ -329,7 +348,6 @@ a {
 	gap: 1.5rem;
 	grid-template-columns: repeat(3, max-content);
 	grid-auto-rows: max-content;
-	list-style: none;
 }
 
 .work__card__list__element {
