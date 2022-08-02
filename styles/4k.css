@@ -1,0 +1,121 @@
+.header {
+	height: 200px;
+}
+
+.header__img {
+	width: 96px;
+	height: 96px;
+}
+
+.header__nav__list__item,
+.header__nav__list__button {
+	font-size: 3rem;
+}
+
+.introduction__salute,
+.introduction__text,
+.introduction__contact-button {
+	font-size: 3rem;
+}
+
+.introduction__name,
+.introduction__description {
+	font-size: 5rem;
+}
+
+.introduction {
+	margin: 50rem 0;
+}
+
+.numbered-topic {
+	font-size: 3rem;
+}
+
+.numbered-topic__text {
+	font-size: 3.4rem;
+}
+
+.about__description {
+	font-size: 3.4rem;
+	line-height: 4rem;
+}
+
+.about__technologies__item {
+	font-size: 3rem;
+}
+
+.about__technologies {
+	margin: 4rem 0;
+}
+
+.experience__slider {
+	align-items: flex-end;
+}
+
+.experience__content__left {
+	display: flex;
+	width: 30%;
+}
+
+.experience__slider__button {
+	width: 50%;
+	padding: 2rem 4rem;
+	height: auto;
+	font-family: "Roboto mono", "monospace";
+	font-size: 2.5rem;
+}
+
+.experience__content__right {
+	width: 70%;
+}
+
+.experience__slider__item__title {
+	font-size: 3.75rem;
+}
+
+.experience__slider__item__date {
+	font-size: 3rem;
+}
+
+.experience__slider__item__list__element {
+	font-size: 3.4rem;
+	line-height: 4rem;
+}
+
+.work__card {
+	padding: 9rem;
+}
+
+.work__card__title {
+	font-size: 3.4rem;
+}
+
+.work__card__description {
+	font-size: 3rem;
+}
+
+.work__card__list {
+	gap: 5rem;
+}
+
+.work__card__list__element {
+	font-size: 2.5rem;
+}
+
+.contact__text {
+	margin-top: 10rem;
+	width: 30%;
+	font-size: 3.4rem;
+}
+
+.contact__button {
+	font-size: 3rem;
+}
+
+.footer__bottom {
+	height: 120px;
+}
+
+.footer__bottom__title {
+	font-size: 3rem;
+}

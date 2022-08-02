@@ -2,6 +2,15 @@
 	margin: 25rem 0 30rem;
 }
 
+.header__nav {
+	width: 80%;
+}
+
+.header__nav__list__item,
+.header__nav__list__button {
+	font-size: 1.8rem;
+	margin: 0 2rem;
+}
 .about__content {
 	display: flex;
 }

@@ -1,3 +1,13 @@
+.header__nav {
+	width: 80%;
+}
+
+.header__nav__list__item,
+.header__nav__list__button {
+	font-size: 2rem;
+	margin: 0 2rem;
+}
+
 .introduction {
 	margin: 35rem 0;
 	padding: 0 20rem;

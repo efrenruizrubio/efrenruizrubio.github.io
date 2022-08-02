@@ -2,6 +2,33 @@
 	display: none;
 }
 
+.header__nav {
+	width: 80%;
+}
+
+.header__nav__list__item__link {
+	color: var(--primary-blue-color);
+}
+
+.header__nav__list {
+	display: flex;
+	justify-content: space-evenly;
+	font-family: "Roboto mono", monospace;
+}
+
+.header__nav__list__item {
+	font-size: 1.4rem;
+	color: var(--primary-green-color);
+	margin: 0 1rem;
+}
+
+.header__nav__list__button {
+	font-size: 1.4rem;
+	padding: 1rem 2rem;
+	border: 1px solid var(--primary-green-color);
+	border-radius: 10px;
+}
+
 .nav-toggle {
 	display: none;
 }
@@ -121,4 +148,8 @@
 	margin: 2rem 0;
 	font-size: 1.8rem;
 	text-align: center;
+}
+
+.footer__bottom {
+	justify-content: center;
 }

@@ -8,45 +8,44 @@
 			name="description"
 			content="Bienvenidos a mi portafolio. Aquí estaré actualizando con todos los proyectos que vaya realizando, tanto en mi vida personal como profesional."
 		/>
-		<title>Efrén Ruíz Rubio | Portfolio</title>
-		<link rel="stylesheet" href="./styles/main.css" defer />
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link
-			href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;700&family=Ubuntu:wght@400;500;700&display=swap"
-			rel="stylesheet"
-		/>
-		<link rel="icon" href="./assets/icons/logo.svg" sizes="48x48" />
-		<link rel="icon" href="./assets/icons/logo.svg" sizes="72x72" />
+		<title>Efr&eacute;n Ruíz Rubio | Portfolio</title>
 		<link rel="icon" href="./assets/icons/logo.svg" sizes="96x96" />
+
+		<script type="text/javascript" src="./scripts/workTab.js" defer></script>
+		<script type="text/javascript" src="./scripts/navMenu.js" defer></script>
+		<script type="text/javascript" src="./scripts/getYears.js" defer></script>
+
+		<link rel="stylesheet" href="./styles/main.css" defer />
 		<link
 			rel="stylesheet"
 			href="./styles/tablet.css"
 			media="(min-width: 768px)"
+			defer
 		/>
 		<link
 			rel="stylesheet"
 			href="./styles/laptop-s.css"
 			media="(min-width: 1024px)"
+			defer
 		/>
 		<link
 			rel="stylesheet"
 			href="./styles/laptop-l.css"
 			media="(min-width: 1440px)"
+			defer
 		/>
 		<link
 			rel="stylesheet"
 			href="./styles/desktop.css"
 			media="(min-width: 1920px)"
+			defer
 		/>
 		<link
 			rel="stylesheet"
-			href="./styles/desktop.css"
-			media="(min-width: 1920px)"
+			href="./styles/4k.css"
+			media="(min-width: 2560px)"
+			defer
 		/>
-		<script type="text/javascript" src="./scripts/workTab.js" defer></script>
-		<script type="text/javascript" src="./scripts/navMenu.js" defer></script>
-		<script type="text/javascript" src="./scripts/getYears.js" defer></script>
 	</head>
 	<body>
 		<header class="header">
@@ -79,6 +78,14 @@
 						04.
 						<a href="#contact__section" class="header__nav__list__item__link"
 							>Contact</a
+						>
+					</li>
+					<li class="header__nav__list__item">
+						<a
+							href="https://firebasestorage.googleapis.com/v0/b/assets-5194e.appspot.com/o/EFR%C3%89N%20RU%C3%8DZ%20RUBIO%20CV.pdf?alt=media&token=bfa59c83-d7dd-485b-b061-925711d845f3"
+							target="_blank"
+							class="header__nav__list__button"
+							>Resume</a
 						>
 					</li>
 				</ul>
@@ -202,7 +209,7 @@
 					<div class="about__content__right">
 						<img
 							class="about__img"
-							src="https://i.postimg.cc/xCnsZQr1/me.jpg"
+							src="https://firebasestorage.googleapis.com/v0/b/assets-5194e.appspot.com/o/me.webp?alt=media&token=f6716ed8-ee2f-487c-a6fe-3f0724c824ae"
 							alt="Foto de Efrén con su novia"
 						/>
 					</div>
@@ -377,10 +384,17 @@
 		<footer class="footer">
 			<div class="footer__top">
 				<a href="https://github.com/efrenruizrubio" target="_blank">
-					<img src="./assets/icons/github-svgrepo-com.svg" alt="GitHub Logo" />
+					<img
+						width="40"
+						height="40"
+						src="./assets/icons/github-svgrepo-com.svg"
+						alt="GitHub Logo"
+					/>
 				</a>
 				<a href="https://www.facebook.com/efren.ruizrubio.31" target="_blank">
 					<img
+						width="40"
+						height="40"
 						src="./assets/icons/facebook-svgrepo-com.svg"
 						alt="Facebook Logo"
 					/>
@@ -390,26 +404,31 @@
 					target="_blank"
 				>
 					<img
+						width="40"
+						height="40"
 						src="./assets/icons/whatsapp-svgrepo-com.svg"
 						alt="WhatsApp Logo"
 					/>
 				</a>
 				<a href="https://www.linkedin.com/in/efren-ruiz-rubio/" target="_blank">
 					<img
+						width="40"
+						height="40"
 						src="./assets/icons/linkedin-svgrepo-com.svg"
 						alt="LinkedIn Logo"
 					/>
 				</a>
 			</div>
 			<div class="footer__bottom">
-				<span>Design by</span>
-				<a
-					class="footer__bottom__link"
-					href="https://brittanychiang.com/"
-					target="_blank"
-					>Brittany Chiang.</a
-				>
-				<span>Made by Efr&eacute;n Ru&iacute;z.</span>
+				<h3 class="footer__bottom__title">
+					<span>Design by</span>
+					<a
+						class="footer__bottom__link"
+						href="https://brittanychiang.com/"
+						target="_blank"
+						>Brittany Chiang.</a
+					><span>&nbsp;Made by Efr&eacute;n Ru&iacute;z.</span>
+				</h3>
 			</div>
 		</footer>
 	</body>

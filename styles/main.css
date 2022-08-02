@@ -2,6 +2,7 @@
 	--primary-green-color: #60ffd9;
 	--secondary-green-color: #009076;
 	--primary-background-color: #081426;
+	--secondary-background-color: #0e1b33;
 	--primary-blue-color: #b0cdf1;
 	--secondary-blue-color: #6994c9;
 	--secondary-grey-color: #a9a297;
@@ -36,6 +37,44 @@ ul {
 
 section {
 	scroll-margin-top: 10rem;
+}
+
+@font-face {
+	font-family: "Ubuntu";
+	font-style: normal;
+	font-weight: 400;
+	src: local(""), url("../fonts/ubuntu-v20-latin-regular.woff2") format("woff2"),
+		url("../fonts/ubuntu-v20-latin-regular.woff") format("woff");
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Ubuntu";
+	font-style: normal;
+	font-weight: 700;
+	src: local(""), url("../fonts/ubuntu-v20-latin-700.woff2") format("woff2"),
+		url("../fonts/ubuntu-v20-latin-700.woff") format("woff");
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Roboto Mono";
+	font-style: normal;
+	font-weight: 400;
+	src: local(""),
+		url("../fonts/roboto-mono-v22-latin-regular.woff2") format("woff2"),
+		url("../fonts/roboto-mono-v22-latin-regular.woff") format("woff");
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Roboto Mono";
+	font-style: normal;
+	font-weight: 700;
+	src: local(""),
+		url("../fonts/roboto-mono-v22-latin-700.woff2") format("woff2"),
+		url("../fonts/roboto-mono-v22-latin-700.woff") format("woff");
+	font-display: swap;
 }
 
 .header {
@@ -109,7 +148,7 @@ section {
 	align-items: center;
 	width: 75%;
 	height: 100%;
-	background-color: #0e1b33;
+	background-color: var(--secondary-background-color);
 	will-change: transform, visibility;
 }
 
@@ -130,20 +169,6 @@ section {
 
 .header__nav {
 	display: none;
-}
-
-.header__nav__list {
-	display: flex;
-}
-
-.header__nav__list__item {
-	font-size: 1.8rem;
-	color: var(--primary-green-color);
-	margin: 0 2rem;
-}
-
-.header__nav__list__item__link {
-	color: var(--primary-blue-color);
 }
 
 .header__aside__list {
@@ -322,7 +347,7 @@ section {
 .experience__slider {
 	display: flex;
 	width: 100%;
-	height: 80px;
+	height: auto;
 	min-width: 256px;
 	overflow-x: auto;
 	overscroll-behavior-x: contain;
@@ -438,25 +463,26 @@ section {
 
 .card-1 {
 	background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
-		url("https://i.postimg.cc/2y4K67s2/facturas.png");
+		url("https://firebasestorage.googleapis.com/v0/b/assets-5194e.appspot.com/o/facturas.webp?alt=media&token=299e2a82-0972-4fcf-88d9-efac4bd79c1f");
 }
 .card-2 {
 	background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
-		url("https://i.postimg.cc/HWFHBbQx/blog.png");
+		url("https://firebasestorage.googleapis.com/v0/b/assets-5194e.appspot.com/o/blog.webp?alt=media&token=ffbd7fcd-c82b-438f-9ef0-7a2a176595b4");
 }
 .card-3 {
 	background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
-		url("https://i.postimg.cc/PJSDn2hB/batatabit.png");
+		url("https://firebasestorage.googleapis.com/v0/b/assets-5194e.appspot.com/o/batatabit.webp?alt=media&token=7118952b-7b16-4f28-9d99-0d94b1e874d3");
 }
 
 .work__card__list {
 	display: grid;
-	gap: 1.5rem;
+	gap: 1rem;
 	grid-template-columns: repeat(3, max-content);
 	grid-auto-rows: max-content;
 }
 
 .work__card__list__element {
+	font-family: "Roboto mono", monospace;
 	color: var(--primary-blue-color);
 }
 
@@ -489,7 +515,6 @@ section {
 	flex-direction: column;
 	width: 100%;
 	min-width: 320px;
-	padding: 2rem 0;
 }
 
 .footer__top {
@@ -498,12 +523,25 @@ section {
 	align-items: center;
 	width: 100%;
 	height: auto;
+	padding: 1rem 0;
 	min-width: 320px;
-	margin-bottom: 3rem;
+	background-color: var(--secondary-green-color);
 }
 
 .footer__bottom {
-	text-align: center;
+	display: flex;
+	align-items: center;
+	height: 60px;
+	background-color: var(--secondary-background-color);
+}
+
+.footer__bottom__title {
+	font-size: 1.4rem;
 	font-family: "Roboto mono", monospace;
-	color: var(--secondary-grey-color);
+	text-align: center;
+	color: var(--primary-blue-color);
+}
+
+.footer__bottom a {
+	color: var(--primary-green-color);
 }

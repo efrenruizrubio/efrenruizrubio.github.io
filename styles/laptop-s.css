@@ -7,6 +7,16 @@
 	padding: 0 7.2rem;
 }
 
+.header__nav {
+	width: 85%;
+}
+
+.header__nav__list__item,
+.header__nav__list__button {
+	font-size: 1.6rem;
+	margin: 0 2rem;
+}
+
 .experience__content__left {
 	display: flex;
 	justify-content: start;
