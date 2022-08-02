@@ -149,18 +149,23 @@ section {
 .header__aside__list {
 	display: flex;
 	flex-direction: column;
-
 	justify-content: center;
 	width: 100%;
 	height: 50%;
+	font-family: "Roboto mono", monospace;
 }
 
 .header__aside__list__item {
 	width: 100%;
-	font-size: 1.7rem;
 	margin-bottom: 1.5rem;
 	color: var(--primary-green-color);
 	text-align: center;
+	font-size: 1.4rem;
+}
+
+.header__aside__list__item br {
+	height: 2px;
+	width: 100%;
 }
 
 .header__aside__list__item__link {
@@ -168,6 +173,17 @@ section {
 	width: inherit;
 	color: var(--primary-blue-color);
 	padding: 0.5rem 2rem 2rem;
+}
+
+.header__aside__list__item__button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 50px;
+	width: 50%;
+	margin: 2.7rem auto 0;
+	border: 1px solid var(--primary-green-color);
+	border-radius: 0.5rem;
 }
 
 .main {
@@ -251,7 +267,7 @@ section {
 
 .numbered-topic hr {
 	width: 100%;
-	border: 1px solid var(--border-color);
+	border: 1px solid var(--primary-border-color);
 }
 
 .numbered-topic__text {
@@ -473,7 +489,7 @@ section {
 	width: 100%;
 	height: auto;
 	min-width: 320px;
-	margin-bottom: 2rem;
+	margin-bottom: 3rem;
 }
 
 .footer__bottom {

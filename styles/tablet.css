@@ -43,8 +43,9 @@
 
 .experience__slider {
 	display: flex;
+	min-width: fit-content;
 	flex-direction: column;
-	align-items: center;
+	align-items: flex-start;
 }
 
 .experience__slider__button {
@@ -57,11 +58,18 @@
 	border-left: 2px solid var(--primary-green-color);
 }
 
+.experience__slider__item {
+	width: 100%;
+	margin: 0;
+}
+
 .experience__content {
 	display: flex;
 }
 
 .experience__content__left {
+	display: flex;
+	justify-content: start;
 	width: 30%;
 }
 
@@ -70,6 +78,7 @@
 }
 
 .experience__slider__item__title {
+	margin-top: 0;
 	font-size: 2rem;
 }
 
@@ -77,6 +86,31 @@
 	font-size: 1.6rem;
 }
 
+.experience__slider__item__list {
+	width: 100%;
+}
+
 .experience__slider__item__list__element {
+	width: 100%;
 	font-size: 1.8rem;
+}
+
+.work__card {
+	padding: 48px;
+	margin-bottom: 5rem;
+}
+
+.work__card__list {
+	grid-template-columns: repeat(5, max-content);
+	align-self: flex-start;
+}
+
+.work__card__description {
+	font-size: 1.8rem;
+}
+
+.contact__text {
+	margin: 2rem 0;
+	font-size: 1.8rem;
+	text-align: center;
 }

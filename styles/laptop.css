@@ -1,0 +1,9 @@
+.experience__content__left {
+	display: flex;
+	justify-content: start;
+	width: 20%;
+}
+
+.experience__content__right {
+	width: 80%;
+}
