@@ -131,6 +131,18 @@ section {
 	bottom: 6px;
 }
 
+.nav-open .hamburger::before {
+	transform: rotate(90deg) translateX(-6px);
+}
+
+.nav-open .hamburger {
+	transform: rotate(0.625turn);
+}
+
+.nav-open .hamburger::after {
+	opacity: 0;
+}
+
 .header__aside {
 	display: flex;
 	justify-content: flex-end;
@@ -274,7 +286,6 @@ section {
 
 .about__description {
 	margin-bottom: 1rem;
-	padding: 0 16px;
 	font-size: 1.6rem;
 	color: var(--secondary-grey-color);
 	line-height: 2.5rem;
@@ -311,9 +322,8 @@ section {
 	gap: 1rem;
 	place-items: start;
 	width: 100%;
-	min-width: 288px;
+	min-width: 256px;
 	margin: 10px 0;
-	padding: 0 16px;
 }
 
 .about__technologies__item {
@@ -324,6 +334,11 @@ section {
 	color: var(--primary-green-color);
 	content: "▹";
 	font-size: 2rem;
+}
+.about__content__left {
+	width: 80%;
+	min-width: 256px;
+	margin: 0 auto;
 }
 
 .about__content__right {
