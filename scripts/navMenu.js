@@ -1,7 +1,7 @@
 if(window.innerWidth < 768){
     const navToggle = document.querySelector('.nav-toggle');
     const button = document.querySelector('.header__aside__button');
-    const items = Array.from(document.querySelectorAll('.header__list__item'));
+    const items = Array.from(document.querySelectorAll('.header__aside__list__item'));
     items.forEach(i => {
         i.addEventListener('click', toggleMenu);
     })

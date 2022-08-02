@@ -19,11 +19,11 @@
 		<link rel="icon" href="./assets/icons/logo.svg" sizes="48x48" />
 		<link rel="icon" href="./assets/icons/logo.svg" sizes="72x72" />
 		<link rel="icon" href="./assets/icons/logo.svg" sizes="96x96" />
-		<link
+		<!-- <link
 			rel="stylesheet"
 			href="./styles/tablet.css"
 			media="(min-width: 768px)"
-		/>
+		/> -->
 		<script type="text/javascript" src="./scripts/workTab.js" defer></script>
 		<script type="text/javascript" src="./scripts/navMenu.js" defer></script>
 		<script type="text/javascript" src="./scripts/getYears.js" defer></script>
@@ -35,49 +35,77 @@
 				class="header__img"
 				alt="Logo con la letra E"
 			/>
+			<nav class="header__nav">
+				<ul class="header__nav__list">
+					<li class="header__nav__list__item">
+						01.
+						<a href="#about__section" class="header__nav__list__item__link"
+							>About</a
+						>
+					</li>
+					<li class="header__nav__list__item">
+						02.
+						<a href="#experience__section" class="header__nav__list__item__link"
+							>Experience</a
+						>
+					</li>
+					<li class="header__nav__list__item">
+						03.
+						<a href="#work__section" class="header__nav__list__item__link"
+							>Work</a
+						>
+					</li>
+					<li class="header__nav__list__item">
+						04.
+						<a href="#contact__section" class="header__nav__list__item__link"
+							>Contact</a
+						>
+					</li>
+				</ul>
+			</nav>
 			<aside class="header__aside">
 				<button
 					class="header__aside__button"
 					type="button"
 					title="Cerrar men&uacute;"
 				></button>
-				<nav class="header__nav">
-					<ul class="header__list">
-						<li class="header__list__item">
+				<nav class="header__aside__nav">
+					<ul class="header__aside__list">
+						<li class="header__aside__list__item">
 							01. <br /><a
-								class="header__list__item__link"
+								class="header__aside__list__item__link"
 								href="#about__section"
 								>About</a
 							>
 						</li>
 
-						<li class="header__list__item">
+						<li class="header__aside__list__item">
 							02. <br /><a
-								class="header__list__item__link"
+								class="header__aside__list__item__link"
 								href="#experience__section"
 								>Experience</a
 							>
 						</li>
 
-						<li class="header__list__item">
+						<li class="header__aside__list__item">
 							03. <br /><a
-								class="header__list__item__link"
+								class="header__aside__list__item__link"
 								href="#work__section"
 								>Work</a
 							>
 						</li>
 
-						<li class="header__list__item">
+						<li class="header__aside__list__item">
 							04. <br /><a
-								class="header__list__item__link"
+								class="header__aside__list__item__link"
 								href="#contact__section"
 								>Contact</a
 							>
 						</li>
 
-						<li class="header__list__item">
+						<li class="header__aside__list__item">
 							<a
-								class="header__list__item__button"
+								class="header__aside__list__item__button"
 								target="_blank"
 								href="https://firebasestorage.googleapis.com/v0/b/assets-5194e.appspot.com/o/EFR%C3%89N%20RU%C3%8DZ%20RUBIO%20CV.pdf?alt=media&token=002e3264-79fc-4dd3-95bd-e8201d5a7a10"
 								>Resume</a
@@ -92,14 +120,18 @@
 		</header>
 		<main class="main">
 			<section class="introduction">
-				<span>Hello! My name is</span>
-				<h1>Efr&eacute;n Ru&iacute;z.</h1>
-				<h2>I'm a Software Engineer focusing on Frontend.</h2>
-				<p>
-					I'm <span id="age"></span>
-					years old and I'm currently studying at the Universidad of
-					Guadalajara, and, at the same time, I'm taking courses at Platzi,
-					which helps me to learn new stuff everyday.
+				<span class="introduction__salute">Hi! My name is</span>
+				<h1 class="introduction__name">Efr&eacute;n Ru&iacute;z.</h1>
+				<h2 class="introduction__description">
+					I'm a Software Engineer focusing on Frontend.
+				</h2>
+				<p class="introduction__text">
+					I'm <span id="age"></span> years old and I'm currently studying at the
+					<a href="http://www.cucei.udg.mx/" target="_blank"
+						>Universidad of Guadalajara (CUCEI)</a
+					>, and, at the same time, I'm taking courses at
+					<a href="https://platzi.com/" target="_blank">Platzi</a>, which helps
+					me to learn new stuff everyday.
 				</p>
 				<a class="introduction__contact-button" href="#contact__section"
 					>Contact</a
@@ -113,7 +145,7 @@
 					<hr />
 				</h2>
 				<p class="about__description">
-					Hello, my name is Efr&eacute;n and I am a programmer since 2018. I
+					Hello 😁, my name is Efr&eacute;n and I am a programmer since 2018. I
 					really enjoy solving problems and to learn new things. I'm currently
 					studying the college at Universidad de Guadalajara and while I'm
 					finishing my studies, I also started to learn front end. Since kid, I
@@ -218,6 +250,30 @@
 						</li>
 					</ul>
 				</div>
+				<!-- <div class="experience__content">
+					<div class="experience__content__left">
+						<div class="experience__slider">
+							<button
+								class="experience__slider__button"
+								onclick="openWork(event, 'Axo')"
+								id="defaultOpen"
+								type="button"
+							>
+								Axo Systems
+							</button>
+							<button
+								class="experience__slider__button"
+								onclick="openWork(event, 'Teleperformance')"
+								type="button"
+							>
+								Teleperformance Alpha
+							</button>
+						</div>
+					</div>
+					<div class="experience__content__right">
+						
+					</div>
+				</div> -->
 			</section>
 			<section class="work" id="work__section">
 				<h2 class="numbered-topic">

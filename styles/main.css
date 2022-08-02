@@ -5,7 +5,8 @@
 	--primary-blue-color: #b0cdf1;
 	--secondary-blue-color: #6994c9;
 	--secondary-grey-color: #a9a297;
-	--border-color: #1c2a43;
+	--primary-border-color: #1c2a43;
+	--secondary-border-color: #41629b;
 }
 
 * {
@@ -47,7 +48,6 @@ section {
 	min-width: 320px;
 	height: 100px;
 	padding: 0 2.5rem;
-	margin-bottom: 2rem;
 }
 
 .header__img {
@@ -96,18 +96,21 @@ section {
 	display: flex;
 	justify-content: flex-end;
 	position: fixed;
-	transform: translateX(100%);
 	inset: 0;
-	transition: transform 250ms ease-in-out;
+	visibility: hidden;
+	transition: all 250ms ease-in-out;
+	transform: translateX(100%);
+	will-change: transform, visibility;
 }
 
-.header__nav {
+.header__aside__nav {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	width: 75%;
 	height: 100%;
 	background-color: #0e1b33;
+	will-change: transform, visibility;
 }
 
 .header__aside__button {
@@ -121,10 +124,29 @@ section {
 }
 
 .nav-open .header__aside {
+	visibility: visible;
 	transform: translateX(0%);
 }
 
-.header__list {
+.header__nav {
+	display: none;
+}
+
+.header__nav__list {
+	display: flex;
+}
+
+.header__nav__list__item {
+	font-size: 1.8rem;
+	color: var(--primary-green-color);
+	margin: 0 2rem;
+}
+
+.header__nav__list__item__link {
+	color: var(--primary-blue-color);
+}
+
+.header__aside__list {
 	display: flex;
 	flex-direction: column;
 
@@ -133,7 +155,7 @@ section {
 	height: 50%;
 }
 
-.header__list__item {
+.header__aside__list__item {
 	width: 100%;
 	font-size: 1.7rem;
 	margin-bottom: 1.5rem;
@@ -141,7 +163,7 @@ section {
 	text-align: center;
 }
 
-.header__list__item__link {
+.header__aside__list__item__link {
 	display: inline-block;
 	width: inherit;
 	color: var(--primary-blue-color);
@@ -169,24 +191,24 @@ section {
 	text-align: center;
 }
 
-.introduction span {
+.introduction__salute {
 	margin: 2rem 0;
 	font-size: 1.6rem;
 	color: var(--primary-green-color);
 }
 
-.introduction h1 {
+.introduction__name {
 	font-size: 3.5rem;
 	color: var(--primary-blue-color);
 }
 
-.introduction h2 {
+.introduction__description {
 	margin: 1.5rem 0;
 	font-size: 3 0.5rem;
 	color: var(--secondary-grey-color);
 }
 
-.introduction p {
+.introduction__text {
 	margin: 1rem 0 6rem 0;
 	font-size: 1.6rem;
 	color: var(--secondary-grey-color);
