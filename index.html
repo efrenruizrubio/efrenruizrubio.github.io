@@ -19,11 +19,11 @@
 		<link rel="icon" href="./assets/icons/logo.svg" sizes="48x48" />
 		<link rel="icon" href="./assets/icons/logo.svg" sizes="72x72" />
 		<link rel="icon" href="./assets/icons/logo.svg" sizes="96x96" />
-		<!-- <link
+		<link
 			rel="stylesheet"
 			href="./styles/tablet.css"
 			media="(min-width: 768px)"
-		/> -->
+		/>
 		<script type="text/javascript" src="./scripts/workTab.js" defer></script>
 		<script type="text/javascript" src="./scripts/navMenu.js" defer></script>
 		<script type="text/javascript" src="./scripts/getYears.js" defer></script>
@@ -190,24 +190,29 @@
 					>
 					<hr />
 				</h2>
-				<div class="experience__slider">
-					<button
-						class="experience__slider__button"
-						onclick="openWork(event, 'Axo')"
-						id="defaultOpen"
-						type="button"
-					>
-						Axo Systems
-					</button>
-					<button
-						class="experience__slider__button"
-						onclick="openWork(event, 'Teleperformance')"
-						type="button"
-					>
-						Teleperformance Alpha
-					</button>
-				</div>
-				<div class="experience__slider__item" id="Axo">
+				
+				<div class="experience__content">
+					<div class="experience__content__left">
+						<div class="experience__slider">
+							<button
+								class="experience__slider__button"
+								onclick="openWork(event, 'Axo')"
+								id="defaultOpen"
+								type="button"
+							>
+								Axo Systems
+							</button>
+							<button
+								class="experience__slider__button"
+								onclick="openWork(event, 'Teleperformance')"
+								type="button"
+							>
+								Teleperformance Alpha
+							</button>
+						</div>
+					</div>
+					<div class="experience__content__right">
+						<div class="experience__slider__item" id="Axo">
 					<h3 class="experience__slider__item__title">
 						Developer at Axo Systems
 					</h3>
@@ -250,30 +255,8 @@
 						</li>
 					</ul>
 				</div>
-				<!-- <div class="experience__content">
-					<div class="experience__content__left">
-						<div class="experience__slider">
-							<button
-								class="experience__slider__button"
-								onclick="openWork(event, 'Axo')"
-								id="defaultOpen"
-								type="button"
-							>
-								Axo Systems
-							</button>
-							<button
-								class="experience__slider__button"
-								onclick="openWork(event, 'Teleperformance')"
-								type="button"
-							>
-								Teleperformance Alpha
-							</button>
-						</div>
 					</div>
-					<div class="experience__content__right">
-						
-					</div>
-				</div> -->
+				</div>
 			</section>
 			<section class="work" id="work__section">
 				<h2 class="numbered-topic">
