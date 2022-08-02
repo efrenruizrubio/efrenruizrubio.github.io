@@ -26,13 +26,23 @@
 		/>
 		<link
 			rel="stylesheet"
-			href="./styles/laptop.css"
+			href="./styles/laptop-s.css"
 			media="(min-width: 1024px)"
 		/>
 		<link
 			rel="stylesheet"
-			href="./styles/desktop.css"
+			href="./styles/laptop-l.css"
 			media="(min-width: 1440px)"
+		/>
+		<link
+			rel="stylesheet"
+			href="./styles/desktop.css"
+			media="(min-width: 1920px)"
+		/>
+		<link
+			rel="stylesheet"
+			href="./styles/desktop.css"
+			media="(min-width: 1920px)"
 		/>
 		<script type="text/javascript" src="./scripts/workTab.js" defer></script>
 		<script type="text/javascript" src="./scripts/navMenu.js" defer></script>
@@ -154,44 +164,49 @@
 					>
 					<hr />
 				</h2>
-				<p class="about__description">
-					Hello 😁, my name is Efr&eacute;n and I am a programmer since 2018. I
-					really enjoy solving problems and to learn new things. I'm currently
-					studying the college at Universidad de Guadalajara and while I'm
-					finishing my studies, I also started to learn front end. Since kid, I
-					was always interested in computers and to discover how things worked,
-					and up to day I'm still with that curiosity that motivates me to learn
-					about new technologies and to implement them in past projects that
-					I've made in my whole career.
-					<br />
-					<br />
-					Currently I'm working on differents projects, one of them is an
-					<a
-						href="https://github.com/efrenruizrubio/intelligent-system"
-						target="_blank"
-						>Expert System</a
-					>
-					that allows the users to input data of diseases, such as signs and
-					symptoms, outputs a diagnosis for a patient based on the signs and
-					symptoms the patient has (Work in progress).
-					<br />
-					<br />
-					Here are a few technologies that I've been working with:
-				</p>
+				<div class="about__content">
+					<div class="about__content__left">
+						<p class="about__description">
+							Hello 😁, my name is Efr&eacute;n and I am a programmer since
+							2018. I really enjoy solving problems and to learn new things. I'm
+							currently studying the college at Universidad de Guadalajara and
+							while I'm finishing my studies, I also started to learn front end.
+							Since kid, I was always interested in computers and to discover
+							how things worked, and up to day I'm still with that curiosity
+							that motivates me to learn about new technologies and to implement
+							them in past projects that I've made in my whole career.
+							<br />
+							<br />
+							Currently I'm working on differents projects, one of them is an
+							<a
+								href="https://github.com/efrenruizrubio/intelligent-system"
+								target="_blank"
+								>Expert System</a
+							>
+							that allows the users to input data of diseases, such as signs and
+							symptoms, outputs a diagnosis for a patient based on the signs and
+							symptoms the patient has (Work in progress).
+							<br />
+							<br />
+							Here are a few technologies that I've been working with:
+						</p>
 
-				<ul class="about__technologies">
-					<li class="about__technologies__item">HTML</li>
-					<li class="about__technologies__item">CSS</li>
-					<li class="about__technologies__item">JavaScript</li>
-					<li class="about__technologies__item">React</li>
-					<li class="about__technologies__item">Node.js</li>
-				</ul>
-
-				<img
-					class="about__img"
-					src="https://i.postimg.cc/xCnsZQr1/me.jpg"
-					alt="Foto de Efrén con su novia"
-				/>
+						<ul class="about__technologies">
+							<li class="about__technologies__item">HTML</li>
+							<li class="about__technologies__item">CSS</li>
+							<li class="about__technologies__item">JavaScript</li>
+							<li class="about__technologies__item">React</li>
+							<li class="about__technologies__item">Node.js</li>
+						</ul>
+					</div>
+					<div class="about__content__right">
+						<img
+							class="about__img"
+							src="https://i.postimg.cc/xCnsZQr1/me.jpg"
+							alt="Foto de Efrén con su novia"
+						/>
+					</div>
+				</div>
 			</section>
 			<section class="experience" id="experience__section">
 				<h2 class="numbered-topic">
@@ -276,68 +291,70 @@
 					>
 					<hr />
 				</h2>
-				<div class="work__card card-1">
-					<h2 class="work__card__title">
-						<a
-							target="_blank"
-							href="https://github.com/efrenruizrubio/Invoices_Generator"
-							>Invoice Generator</a
-						>
-					</h2>
-					<p class="work__card__description">
-						It's a web app that its main function is to generate PDF's with
-						input given by the user, which can be given by input devices like
-						the Keyboard or a CSV file. Also it's able to store the user's
-						account into a database which is needed for generating a history
-						with all of the invoices generated.
-					</p>
-					<ul class="work__card__list">
-						<li class="work__card__list__element">VS Code</li>
-						<li class="work__card__list__element">React</li>
-						<li class="work__card__list__element">Material UI</li>
-						<li class="work__card__list__element">PHP</li>
-					</ul>
-				</div>
-				<div class="work__card card-2">
-					<h2 class="work__card__title">
-						<a
-							target="_blank"
-							href="https://efrenruizrubio-personal-blog.netlify.app/"
-							>Personal Blog</a
-						>
-					</h2>
-					<p class="work__card__description">
-						It's a project that I designed to learn more about front end
-						development. I'll keep it updated as long as I'm motivated. It's
-						simple, but it uses good practices in HTML and CSS, and it's one of
-						my first pages fully responsive.
-					</p>
-					<ul class="work__card__list">
-						<li class="work__card__list__element">VS Code</li>
-						<li class="work__card__list__element">HTML</li>
-						<li class="work__card__list__element">CSS</li>
-						<li class="work__card__list__element">Responsive</li>
-					</ul>
-				</div>
-				<div class="work__card card-3">
-					<h2 class="work__card__title">
-						<a
-							target="_blank"
-							href="https://efrenruizrubio-mobile-first-project.netlify.app/"
-							>Batatabit</a
-						>
-					</h2>
-					<p class="work__card__description">
-						This is a landing page for a exchange company, it's made with HTML
-						and CSS purely and its design is implemented with a mindset of
-						mobile-first.
-					</p>
-					<ul class="work__card__list">
-						<li class="work__card__list__element">VS Code</li>
-						<li class="work__card__list__element">HTML</li>
-						<li class="work__card__list__element">CSS</li>
-						<li class="work__card__list__element">Responsive</li>
-					</ul>
+				<div class="work__card__container">
+					<div class="work__card card-1">
+						<h2 class="work__card__title">
+							<a
+								target="_blank"
+								href="https://github.com/efrenruizrubio/Invoices_Generator"
+								>Invoice Generator</a
+							>
+						</h2>
+						<p class="work__card__description">
+							It's a web app that its main function is to generate PDF's with
+							input given by the user, which can be given by input devices like
+							the Keyboard or a CSV file. Also it's able to store the user's
+							account into a database which is needed for generating a history
+							with all of the invoices generated.
+						</p>
+						<ul class="work__card__list">
+							<li class="work__card__list__element">VS Code</li>
+							<li class="work__card__list__element">React</li>
+							<li class="work__card__list__element">Material UI</li>
+							<li class="work__card__list__element">PHP</li>
+						</ul>
+					</div>
+					<div class="work__card card-2">
+						<h2 class="work__card__title">
+							<a
+								target="_blank"
+								href="https://efrenruizrubio-personal-blog.netlify.app/"
+								>Personal Blog</a
+							>
+						</h2>
+						<p class="work__card__description">
+							It's a project that I designed to learn more about front end
+							development. I'll keep it updated as long as I'm motivated. It's
+							simple, but it uses good practices in HTML and CSS, and it's one
+							of my first pages fully responsive.
+						</p>
+						<ul class="work__card__list">
+							<li class="work__card__list__element">VS Code</li>
+							<li class="work__card__list__element">HTML</li>
+							<li class="work__card__list__element">CSS</li>
+							<li class="work__card__list__element">Responsive</li>
+						</ul>
+					</div>
+					<div class="work__card card-3">
+						<h2 class="work__card__title">
+							<a
+								target="_blank"
+								href="https://efrenruizrubio-mobile-first-project.netlify.app/"
+								>Batatabit</a
+							>
+						</h2>
+						<p class="work__card__description">
+							This is a landing page for a exchange company, it's made with HTML
+							and CSS purely and its design is implemented with a mindset of
+							mobile-first.
+						</p>
+						<ul class="work__card__list">
+							<li class="work__card__list__element">VS Code</li>
+							<li class="work__card__list__element">HTML</li>
+							<li class="work__card__list__element">CSS</li>
+							<li class="work__card__list__element">Responsive</li>
+						</ul>
+					</div>
 				</div>
 			</section>
 			<section class="contact" id="contact__section">

@@ -1,0 +1,26 @@
+.introduction {
+	margin: 25rem 0 30rem;
+}
+
+.about__content {
+	display: flex;
+}
+
+.about__content__left {
+	width: 60%;
+}
+
+.about__content__right {
+	width: 40%;
+	border: 1px solid var(--primary-green-color);
+}
+
+.about__img {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+}
+
+.work__card {
+	padding: 7rem;
+}

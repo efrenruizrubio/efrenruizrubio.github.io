@@ -11,7 +11,7 @@
 }
 
 .introduction {
-	margin: 15rem 0;
+	margin: 32rem 0;
 }
 
 .introduction__salute,
@@ -24,12 +24,20 @@
 	font-size: 4rem;
 }
 
+.introduction__contact-button {
+	margin-top: 5rem;
+}
+
 .numbered-topic {
 	font-size: 2.2rem;
 }
 
 .numbered-topic__text {
 	font-size: 2.5rem;
+}
+
+.about {
+	margin-bottom: 2rem;
 }
 
 .about__description {

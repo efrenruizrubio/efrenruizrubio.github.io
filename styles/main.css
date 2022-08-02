@@ -201,7 +201,7 @@ section {
 	width: 80%;
 	min-width: 256px;
 	margin-top: 10rem;
-	margin-bottom: 16rem;
+	margin-bottom: 5rem;
 	height: auto;
 	font-family: "Ubuntu", sans-serif;
 	text-align: center;
@@ -225,7 +225,7 @@ section {
 }
 
 .introduction__text {
-	margin: 1rem 0 6rem 0;
+	margin: 1rem 0 3rem 0;
 	font-size: 1.6rem;
 	color: var(--secondary-grey-color);
 }
@@ -299,6 +299,11 @@ section {
 	color: var(--primary-green-color);
 	content: "▹";
 	font-size: 2rem;
+}
+
+.about__content__right {
+	display: flex;
+	justify-content: center;
 }
 
 .about__img {
@@ -412,6 +417,11 @@ section {
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
+}
+
+.work__card__container {
+	display: grid;
+	place-items: center;
 }
 
 .work__card__title {
