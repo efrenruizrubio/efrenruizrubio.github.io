@@ -1,0 +1,300 @@
+:root {
+	--primary-green-color: #60ffd9;
+	--secondary-green-color: #009076;
+	--primary-background-color: #081426;
+	--secondary-background-color: #0e1b33;
+	--primary-blue-color: #b0cdf1;
+	--secondary-blue-color: #6994c9;
+	--secondary-grey-color: #a9a297;
+	--primary-border-color: #1c2a43;
+	--secondary-border-color: #41629b;
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	font-size: 62.5%;
+	scroll-behavior: smooth;
+}
+
+body {
+	font-size: 1.6rem;
+	font-family: "Ubuntu", sans-serif;
+	background-color: var(--primary-background-color);
+}
+
+ul {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+	color: var(--primary-green-color);
+}
+
+@font-face {
+	font-family: "Ubuntu";
+	font-style: normal;
+	font-weight: 400;
+	src: local(""),
+		url("../../fonts/ubuntu-v20-latin-regular.woff2") format("woff2"),
+		url("../../fonts/ubuntu-v20-latin-regular.woff") format("woff");
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Ubuntu";
+	font-style: normal;
+	font-weight: 700;
+	src: local(""), url("../../fonts/ubuntu-v20-latin-700.woff2") format("woff2"),
+		url("../../fonts/ubuntu-v20-latin-700.woff") format("woff");
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Roboto Mono";
+	font-style: normal;
+	font-weight: 400;
+	src: local(""),
+		url("../../fonts/roboto-mono-v22-latin-regular.woff2") format("woff2"),
+		url("../../fonts/roboto-mono-v22-latin-regular.woff") format("woff");
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Roboto Mono";
+	font-style: normal;
+	font-weight: 700;
+	src: local(""),
+		url("../../fonts/roboto-mono-v22-latin-700.woff2") format("woff2"),
+		url("../../fonts/roboto-mono-v22-latin-700.woff") format("woff");
+	font-display: swap;
+}
+
+.header {
+	display: flex;
+	position: fixed;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0 2rem;
+	width: 100%;
+	min-width: 320px;
+	height: 100px;
+}
+
+.header__logo {
+	width: 100px;
+	height: fit-content;
+	cursor: pointer;
+	z-index: 3;
+}
+
+.nav-toggle {
+	background: transparent;
+	border: none;
+}
+
+.hamburger {
+	display: block;
+	position: relative;
+}
+
+.hamburger,
+.hamburger::before,
+.hamburger::after {
+	width: 2rem;
+	height: 3px;
+	border-radius: 1rem;
+	background-color: var(--secondary-green-color);
+	transition: transform 250ms ease-in-out;
+}
+
+.hamburger::before,
+.hamburger::after {
+	content: "";
+	position: absolute;
+	left: 0;
+	right: 0;
+}
+
+.hamburger::before {
+	top: 6px;
+}
+
+.hamburger::after {
+	bottom: 6px;
+}
+
+.nav-open .hamburger::before {
+	transform: rotate(90deg) translateX(-6px);
+}
+
+.nav-open .hamburger {
+	transform: rotate(0.625turn);
+}
+
+.nav-open .hamburger::after {
+	opacity: 0;
+}
+
+.header__aside {
+	display: flex;
+	justify-content: flex-end;
+	position: fixed;
+	inset: 0;
+	visibility: hidden;
+	transition: all 250ms ease-in-out;
+	transform: translateX(100%);
+	will-change: transform, visibility;
+}
+
+.header__aside__nav {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 55%;
+	height: 100%;
+	background-color: var(--secondary-background-color);
+	will-change: transform, visibility;
+}
+
+.header__aside__button {
+	position: absolute;
+	backdrop-filter: blur(2px);
+	width: 100vw;
+	height: 100vh;
+	background: none;
+	border: none;
+	z-index: -1;
+}
+
+.nav-open .header__aside {
+	visibility: visible;
+	transform: translateX(0%);
+}
+
+.header__nav {
+	display: none;
+}
+
+.header__aside__list {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 100%;
+	height: 50%;
+	font-family: "Roboto mono", monospace;
+}
+
+.header__aside__list__item {
+	width: 100%;
+	margin-bottom: 1.5rem;
+	color: var(--primary-green-color);
+	text-align: center;
+	font-size: 1.4rem;
+}
+
+.header__aside__list__item br {
+	height: 2px;
+	width: 100%;
+}
+
+.header__aside__list__item__link {
+	display: inline-block;
+	width: inherit;
+	color: var(--primary-blue-color);
+	padding: 0.5rem 2rem 2rem;
+}
+
+.header__aside__list__item__button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 50px;
+	width: 50%;
+	margin: 2.7rem auto 0;
+	border: 1px solid var(--primary-green-color);
+	border-radius: 0.5rem;
+}
+
+.main {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+	height: auto;
+	min-width: 320px;
+}
+
+.introduction {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: calc(100vh - 223px);
+	margin-top: 10rem;
+	background-image: url("https://firebasestorage.googleapis.com/v0/b/assets-5194e.appspot.com/o/Cover.webp?alt=media&token=69683fa5-7050-42f7-b777-9681839a13dc");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.introduction__content {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+	width: 80%;
+	min-width: 256px;
+	height: 50%;
+}
+
+.introduction__title {
+	text-align: center;
+	color: #fff;
+}
+
+.introduction__button {
+	padding: 1rem 1rem;
+	border: 1px solid var(--primary-green-color);
+	border-radius: 5px;
+}
+
+.footer {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	min-width: 320px;
+}
+
+.footer__top {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	width: 100%;
+	height: auto;
+	padding: 1rem 0;
+	min-width: 320px;
+	background-color: var(--secondary-green-color);
+}
+
+.footer__bottom {
+	display: flex;
+	align-items: center;
+	height: 60px;
+	background-color: var(--secondary-background-color);
+}
+
+.footer__bottom__title {
+	font-size: 1.4rem;
+	font-family: "Roboto mono", monospace;
+	text-align: center;
+	color: var(--primary-blue-color);
+}
+
+.footer__bottom a {
+	color: var(--primary-green-color);
+}
