@@ -234,6 +234,7 @@ a {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	width: 100%;
 	height: calc(100vh - 223px);
 	margin-top: 10rem;
 	background-image: url("https://firebasestorage.googleapis.com/v0/b/assets-5194e.appspot.com/o/Cover.webp?alt=media&token=69683fa5-7050-42f7-b777-9681839a13dc");
@@ -249,7 +250,7 @@ a {
 	align-items: center;
 	width: 80%;
 	min-width: 256px;
-	height: 50%;
+	height: 60%;
 }
 
 .introduction__title {
@@ -281,8 +282,14 @@ a {
 	background-color: var(--secondary-green-color);
 }
 
+.footer__top__icon {
+	width: 40px;
+	height: 40px;
+}
+
 .footer__bottom {
 	display: flex;
+	justify-content: center;
 	align-items: center;
 	height: 60px;
 	background-color: var(--secondary-background-color);

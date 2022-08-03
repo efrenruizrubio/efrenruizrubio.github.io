@@ -1,0 +1,24 @@
+.header__logo {
+	width: 175px;
+}
+
+.header__nav__list__item {
+	font-size: 1.9rem;
+	margin: 0 4rem;
+}
+
+.introduction__content {
+	width: 30%;
+}
+
+.introduction__title {
+	font-size: 3.8rem;
+}
+
+.introduction__button {
+	font-size: 2.4rem;
+}
+
+.footer__bottom__title {
+	font-size: 2rem;
+}

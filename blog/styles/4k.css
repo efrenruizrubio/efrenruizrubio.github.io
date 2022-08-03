@@ -1,0 +1,46 @@
+.header {
+	height: 150px;
+}
+
+.header__logo {
+	width: 250px;
+}
+
+.header__nav__list__item {
+	font-size: 2.5rem;
+	margin: 0 6rem;
+}
+
+.introduction {
+	margin-top: 15rem;
+	height: calc(100vh - 325px);
+}
+
+.introduction__title {
+	font-size: 4.6rem;
+}
+
+.introduction__button {
+	font-size: 2.8rem;
+}
+
+.footer {
+	height: 175px;
+}
+
+.footer__top {
+	height: 100px;
+}
+
+.footer__top__icon {
+	width: 60px;
+	height: 60px;
+}
+
+.footer__bottom {
+	height: 75px;
+}
+
+.footer__bottom__title {
+	font-size: 2.5rem;
+}

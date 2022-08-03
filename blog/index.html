@@ -4,7 +4,46 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="./styles/main.css" />
+		<meta
+			name="description"
+			content="This is my personal blogsite, which is meant to be used as a news portal that will be updated regularly"
+		/>
+		<link
+			rel="preload"
+			as="image"
+			href="https://firebasestorage.googleapis.com/v0/b/assets-5194e.appspot.com/o/Cover.webp?alt=media&token=69683fa5-7050-42f7-b777-9681839a13dc"
+		/>
+		<link rel="stylesheet" defer href="./styles/main.css" />
+		<link
+			rel="stylesheet"
+			href="./styles/tablet.css"
+			media="(min-width: 768px)"
+			defer
+		/>
+		<link
+			rel="stylesheet"
+			href="./styles/laptop-s.css"
+			media="(min-width: 1024px)"
+			defer
+		/>
+		<link
+			rel="stylesheet"
+			href="./styles/laptop-l.css"
+			media="(min-width: 1440px)"
+			defer
+		/>
+		<link
+			rel="stylesheet"
+			href="./styles/desktop.css"
+			media="(min-width: 1920px)"
+			defer
+		/>
+		<link
+			rel="stylesheet"
+			href="./styles/4k.css"
+			media="(min-width: 2560px)"
+			defer
+		/>
 		<script type="text/javascript" src="../scripts/navMenu.js" defer></script>
 		<title>Efr&eacute;n Ru&iacute;z | Blog personal</title>
 	</head>
@@ -26,17 +65,11 @@
 					<li class="header__nav__list__item">
 						02.
 						<a href="#experience__section" class="header__nav__list__item__link"
-							>Experience</a
+							>Blogs</a
 						>
 					</li>
 					<li class="header__nav__list__item">
 						03.
-						<a href="#work__section" class="header__nav__list__item__link"
-							>Work</a
-						>
-					</li>
-					<li class="header__nav__list__item">
-						04.
 						<a href="#contact__section" class="header__nav__list__item__link"
 							>Contact</a
 						>
@@ -95,16 +128,14 @@
 			<div class="footer__top">
 				<a href="https://github.com/efrenruizrubio" target="_blank">
 					<img
-						width="40"
-						height="40"
+						class="footer__top__icon"
 						src="../assets/icons/github-svgrepo-com.svg"
 						alt="GitHub Logo"
 					/>
 				</a>
 				<a href="https://www.facebook.com/efren.ruizrubio.31" target="_blank">
 					<img
-						width="40"
-						height="40"
+						class="footer__top__icon"
 						src="../assets/icons/facebook-svgrepo-com.svg"
 						alt="Facebook Logo"
 					/>
@@ -114,31 +145,29 @@
 					target="_blank"
 				>
 					<img
-						width="40"
-						height="40"
+						class="footer__top__icon"
 						src="../assets/icons/whatsapp-svgrepo-com.svg"
 						alt="WhatsApp Logo"
 					/>
 				</a>
 				<a href="https://www.linkedin.com/in/efren-ruiz-rubio/" target="_blank">
 					<img
-						width="40"
-						height="40"
+						class="footer__top__icon"
 						src="../assets/icons/linkedin-svgrepo-com.svg"
 						alt="LinkedIn Logo"
 					/>
 				</a>
 			</div>
 			<div class="footer__bottom">
-				<h3 class="footer__bottom__title">
-					<span>Design and Made by</span>
+				<h2 class="footer__bottom__title">
+					<span>Made by</span>
 					<a
 						class="footer__bottom__link"
-						href="https://brittanychiang.com/"
+						href="https://github.com/efrenruizrubio/efrenruizrubio.github.io/"
 						target="_blank"
 						>Efr&eacute;n Ru&iacute;z.</a
 					>
-				</h3>
+				</h2>
 			</div>
 		</footer>
 	</body>
