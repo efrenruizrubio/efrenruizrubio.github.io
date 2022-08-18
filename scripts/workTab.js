@@ -72,9 +72,11 @@ const changeClass = (e) => {
 
 	for (let i = 0; i < buttons.length; i++) {
 		buttons[i].classList.remove("active");
-
-		jobItems[i].style.display = "block";
+		jobItems[i].style.display = "none";
+		if (jobItems[i].classList[1] === e.currentTarget.classList[1])
+			jobItems[i].style.display = "block";
 	}
+
 	e.currentTarget.classList.add("active");
 };
 
