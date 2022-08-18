@@ -7,6 +7,19 @@
 	margin: 0 3rem;
 }
 
+.blogs__news {
+	display: flex;
+	justify-content: center;
+}
+
+.blogs__news__left {
+	width: 40%;
+}
+
+.blogs__news__right {
+	width: 40%;
+}
+
 .introduction__content {
 	width: 40%;
 }

@@ -8,11 +8,6 @@
 			name="description"
 			content="This is my personal blogsite, which is meant to be used as a news portal that will be updated regularly"
 		/>
-		<link
-			rel="preload"
-			as="image"
-			href="https://firebasestorage.googleapis.com/v0/b/assets-5194e.appspot.com/o/Cover.webp?alt=media&token=69683fa5-7050-42f7-b777-9681839a13dc"
-		/>
 		<link rel="stylesheet" defer href="./styles/main.css" />
 		<link
 			rel="stylesheet"
@@ -127,13 +122,81 @@
 				<span class="hamburger"></span>
 			</button>
 		</header>
-		<main class="main">
-			<section class="introduction">
-				<div class="introduction__content">
-					<h1 class="introduction__title">
-						Take a look at the novelties of the Tech World
-					</h1>
-					<a class="introduction__button" href="blogs.html">Enter Now!</a>
+		<main class="blog">
+			<section class="blog__content">
+				<img
+					src="https://bun.sh/logo.svg"
+					alt="Bun compiler logo"
+					class="blogs__news__img blog__img"
+				/>
+				<h2 class="blogs__news__title blog__title">Blogpost Title</h2>
+				<p class="blogs__news__text">
+					Bun is a modern JavaScript runtime like Node or Deno. It was built
+					from scratch to focus on three main things:<br />
+				</p>
+				<ul class="blogs__news__list">
+					<li class="blogs__news__text">
+						Start fast (it has the edge in mind)
+					</li>
+					<li class="blogs__news__text">
+						New leves of performance (extending JavaScriptCore, the engine).
+					</li>
+					<li class="blogs__news__text">
+						Being a great and complete tool (bundler, transpiler, package
+						manager).
+					</li>
+				</ul>
+				<p class="blogs__news__text">
+					Bun is designes as a drop-in replacement for your current JavaScript &
+					TypeScript apps or scripts -- on your local computer, server or on the
+					edge. Bun natively implements hundreds of Node.js and Web APIs,
+					including ~90% of
+					<a href="https://nodejs.org/api/n-api.html">Node-API</a> functions
+					(native modules), fs, path, Buffer, and more.
+					<br />
+					<br />
+					The goal of Bun is to run most of the world's JavaScript outside of
+					browsers, bringing performance and complexity enhancements to your
+					future infrastructure, as well as developer productivity through
+					better, simpler tooling.
+				</p>
+			</section>
+			<section class="blog__form">
+				<div class="blog__form__item-1">
+					<div class="blog__form__item__left">
+						<img
+							src="https://firebasestorage.googleapis.com/v0/b/assets-5194e.appspot.com/o/013-newsletter.webp?alt=media&token=416eca1a-d857-4415-b9c2-fffef5317a04"
+							alt="Newsletter icon"
+							class="blog__form__item__img"
+						/>
+					</div>
+					<div class="blog__form__item__right">
+						<h3 class="blog__form__item__title">Contact</h3>
+						<p class="blog__form__item__text">
+							Want to contact me? Send me a message
+							<a href="mailto:efren282@outlook.es?subject=Contact"
+								>right here!</a
+							>
+						</p>
+					</div>
+				</div>
+				<div class="blog__form__item-2">
+					<div class="blog__form__item__left">
+						<img
+							src="https://firebasestorage.googleapis.com/v0/b/assets-5194e.appspot.com/o/006-like.webp?alt=media&token=7e11a526-db9f-4c8c-94b8-b1c5b027b009"
+							alt="Like icon"
+							class="blog__form__item__img"
+						/>
+					</div>
+					<div class="blog__form__item__right">
+						<h3 class="blog__form__item__title">Write</h3>
+						<p class="blog__form__item__text">
+							Want to write a blogpost? Contact me
+							<a href="mailto:efren282@outlook.es?subject=Write Blogpost"
+								>right here!</a
+							>
+						</p>
+					</div>
 				</div>
 			</section>
 		</main>

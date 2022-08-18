@@ -19,6 +19,29 @@
 	font-size: 2.4rem;
 }
 
+.blogs__news__title,
+.blogs__latest__title {
+	font-size: 3rem;
+}
+
+.blogs__news__subtitle,
+.blogs__latest__subtitle {
+	font-size: 2.4rem;
+}
+
+.blogs__news__text,
+.blogs__latest__text {
+	font-size: 2rem;
+	line-height: 2.8rem;
+}
+
+.blogs__latest__grid {
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-areas:
+		"blog1 blog2 blog3"
+		"blog4 blog5 blog6";
+}
+
 .footer__bottom__title {
 	font-size: 2rem;
 }

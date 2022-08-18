@@ -52,3 +52,16 @@
 .introduction__button {
 	font-size: 2rem;
 }
+
+.blog__form {
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-areas: "item1 item2";
+}
+
+.blog__form__item-1 {
+	grid-area: item1;
+}
+
+.blog__form__item-2 {
+	grid-area: item2;
+}

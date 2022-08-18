@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta
+			name="description"
+			content="This is my personal blogsite, which is meant to be used as a news portal that will be updated regularly"
+		/>
+		<link rel="stylesheet" defer href="./styles/main.css" />
+		<link
+			rel="stylesheet"
+			href="./styles/tablet.css"
+			media="(min-width: 768px)"
+			defer
+		/>
+		<link
+			rel="stylesheet"
+			href="./styles/laptop-s.css"
+			media="(min-width: 1024px)"
+			defer
+		/>
+		<link
+			rel="stylesheet"
+			href="./styles/laptop-l.css"
+			media="(min-width: 1440px)"
+			defer
+		/>
+		<link
+			rel="stylesheet"
+			href="./styles/desktop.css"
+			media="(min-width: 1920px)"
+			defer
+		/>
+		<link
+			rel="stylesheet"
+			href="./styles/4k.css"
+			media="(min-width: 2560px)"
+			defer
+		/>
+		<script type="text/javascript" src="../scripts/navMenu.js" defer></script>
+		<title>Efr&eacute;n Ru&iacute;z | Blog personal</title>
+	</head>
+	<body>
+		<header class="header">
+			<img
+				src="assets/icons/logo.svg"
+				class="header__logo"
+				alt="Efr&eacute;n Blogs logo"
+			/>
+			<nav class="header__nav">
+				<ul class="header__nav__list">
+					<li class="header__nav__list__item">
+						01.
+						<a href="#about__section" class="header__nav__list__item__link"
+							>Home</a
+						>
+					</li>
+					<li class="header__nav__list__item">
+						02.
+						<a href="#about__section" class="header__nav__list__item__link"
+							>About</a
+						>
+					</li>
+					<li class="header__nav__list__item">
+						03.
+						<a href="#experience__section" class="header__nav__list__item__link"
+							>Blogs</a
+						>
+					</li>
+					<li class="header__nav__list__item">
+						04.
+						<a href="#contact__section" class="header__nav__list__item__link"
+							>Contact</a
+						>
+					</li>
+				</ul>
+			</nav>
+			<aside class="header__aside">
+				<button
+					class="header__aside__button"
+					type="button"
+					title="Cerrar men&uacute;"
+				></button>
+				<nav class="header__aside__nav">
+					<ul class="header__aside__list">
+						<li class="header__aside__list__item">
+							01. <br /><a
+								class="header__aside__list__item__link"
+								href="#about__section"
+								>Home</a
+							>
+						</li>
+						<li class="header__aside__list__item">
+							02. <br /><a
+								class="header__aside__list__item__link"
+								href="#about__section"
+								>About</a
+							>
+						</li>
+
+						<li class="header__aside__list__item">
+							03. <br /><a
+								class="header__aside__list__item__link"
+								href="#experience__section"
+								>Blogs</a
+							>
+						</li>
+
+						<li class="header__aside__list__item">
+							04. <br /><a
+								class="header__aside__list__item__link"
+								href="#work__section"
+								>Contact</a
+							>
+						</li>
+					</ul>
+				</nav>
+			</aside>
+			<button class="nav-toggle" aria-label="Abrir men&uacute;" type="button">
+				<span class="hamburger"></span>
+			</button>
+		</header>
+		<main class="blogs">
+			<section class="blogs__news">
+				<div class="blogs__news__left">
+					<h2 class="blogs__news__title">News</h2>
+					<img
+						src="https://bun.sh/logo.svg"
+						alt="Bun compiler logo"
+						class="blogs__news__img"
+					/>
+				</div>
+				<div class="blogs__news__right">
+					<h3 class="blogs__news__subtitle">Blogpost Title</h3>
+					<p class="blogs__news__text">
+						Bun is a modern JavaScript runtime like Node or Deno. It was built
+						from scratch to focus on three main things:<br />
+					</p>
+					<ul class="blogs__news__list">
+						<li class="blogs__news__text">
+							Start fast (it has the edge in mind)
+						</li>
+						<li class="blogs__news__text">
+							New leves of performance (extending JavaScriptCore, the engine).
+						</li>
+						<li class="blogs__news__text">
+							Being a great and complete tool (bundler, transpiler, package
+							manager).
+						</li>
+					</ul>
+					<p class="blogs__news__text">
+						Bun is designes as a drop-in replacement for your current JavaScript
+						& TypeScript apps or scripts -- on your local computer...
+					</p>
+					<a href="bun-blog.html" class="blogs__news__link">Read more</a>
+				</div>
+			</section>
+			<section class="blogs__latest">
+				<h2 class="blogs__latest__title">Latest Blogs</h2>
+				<hr class="blogs__latest__separator" />
+				<div class="blogs__latest__grid">
+					<div class="blog-1 item">
+						<img
+							src="https://bun.sh/logo.svg"
+							alt="Bun compiler logo"
+							class="blogs__latest__img"
+						/>
+						<h3 class="blogs__latest__subtitle">Blogpost Title</h3>
+						<p class="blogs__latest__text">
+							Bun is a modern JavaScript runtime like Node or Deno. It was built
+							from scratch to focus on three main things:<br />
+						</p>
+						<ul class="blogs__latest__list">
+							<li class="blogs__latest__text">
+								Start fast (it has the edge in mind)
+							</li>
+							<li class="blogs__latest__text">
+								New leves of performance (extending JavaScriptCore, the engine).
+							</li>
+							<li class="blogs__latest__text">
+								Being a great and complete tool (bundler, transpiler, package
+								manager).
+							</li>
+						</ul>
+						<p class="blogs__latest__text">
+							Bun is designes as a drop-in replacement for your current
+							JavaScript & TypeScript apps or scripts -- on your local
+							computer...
+						</p>
+						<a href="bun-blog.html" class="blogs__latest__link">Read more</a>
+						<hr class="blogs__latest__separator" />
+					</div>
+					<div class="blog-2 item">
+						<img
+							src="https://bun.sh/logo.svg"
+							alt="Bun compiler logo"
+							class="blogs__latest__img"
+						/>
+						<h3 class="blogs__latest__subtitle">Blogpost Title</h3>
+						<p class="blogs__latest__text">
+							Bun is a modern JavaScript runtime like Node or Deno. It was built
+							from scratch to focus on three main things:<br />
+						</p>
+						<ul class="blogs__latest__list">
+							<li class="blogs__latest__text">
+								Start fast (it has the edge in mind)
+							</li>
+							<li class="blogs__latest__text">
+								New leves of performance (extending JavaScriptCore, the engine).
+							</li>
+							<li class="blogs__latest__text">
+								Being a great and complete tool (bundler, transpiler, package
+								manager).
+							</li>
+						</ul>
+						<p class="blogs__latest__text">
+							Bun is designes as a drop-in replacement for your current
+							JavaScript & TypeScript apps or scripts -- on your local
+							computer...
+						</p>
+						<a href="bun-blog.html" class="blogs__latest__link">Read more</a>
+						<hr class="blogs__latest__separator" />
+					</div>
+					<div class="blog-3 item">
+						<img
+							src="https://bun.sh/logo.svg"
+							alt="Bun compiler logo"
+							class="blogs__latest__img"
+						/>
+						<h3 class="blogs__latest__subtitle">Blogpost Title</h3>
+						<p class="blogs__latest__text">
+							Bun is a modern JavaScript runtime like Node or Deno. It was built
+							from scratch to focus on three main things:<br />
+						</p>
+						<ul class="blogs__latest__list">
+							<li class="blogs__latest__text">
+								Start fast (it has the edge in mind)
+							</li>
+							<li class="blogs__latest__text">
+								New leves of performance (extending JavaScriptCore, the engine).
+							</li>
+							<li class="blogs__latest__text">
+								Being a great and complete tool (bundler, transpiler, package
+								manager).
+							</li>
+						</ul>
+						<p class="blogs__latest__text">
+							Bun is designes as a drop-in replacement for your current
+							JavaScript & TypeScript apps or scripts -- on your local
+							computer...
+						</p>
+						<a href="bun-blog.html" class="blogs__latest__link">Read more</a>
+						<hr class="blogs__latest__separator" />
+					</div>
+					<div class="blog-4 item">
+						<img
+							src="https://bun.sh/logo.svg"
+							alt="Bun compiler logo"
+							class="blogs__latest__img"
+						/>
+						<h3 class="blogs__latest__subtitle">Blogpost Title</h3>
+						<p class="blogs__latest__text">
+							Bun is a modern JavaScript runtime like Node or Deno. It was built
+							from scratch to focus on three main things:<br />
+						</p>
+						<ul class="blogs__latest__list">
+							<li class="blogs__latest__text">
+								Start fast (it has the edge in mind)
+							</li>
+							<li class="blogs__latest__text">
+								New leves of performance (extending JavaScriptCore, the engine).
+							</li>
+							<li class="blogs__latest__text">
+								Being a great and complete tool (bundler, transpiler, package
+								manager).
+							</li>
+						</ul>
+						<p class="blogs__latest__text">
+							Bun is designes as a drop-in replacement for your current
+							JavaScript & TypeScript apps or scripts -- on your local
+							computer...
+						</p>
+						<a href="bun-blog.html" class="blogs__latest__link">Read more</a>
+						<hr class="blogs__latest__separator" />
+					</div>
+					<div class="blog-5 item">
+						<img
+							src="https://bun.sh/logo.svg"
+							alt="Bun compiler logo"
+							class="blogs__latest__img"
+						/>
+						<h3 class="blogs__latest__subtitle">Blogpost Title</h3>
+						<p class="blogs__latest__text">
+							Bun is a modern JavaScript runtime like Node or Deno. It was built
+							from scratch to focus on three main things:<br />
+						</p>
+						<ul class="blogs__latest__list">
+							<li class="blogs__latest__text">
+								Start fast (it has the edge in mind)
+							</li>
+							<li class="blogs__latest__text">
+								New leves of performance (extending JavaScriptCore, the engine).
+							</li>
+							<li class="blogs__latest__text">
+								Being a great and complete tool (bundler, transpiler, package
+								manager).
+							</li>
+						</ul>
+						<p class="blogs__latest__text">
+							Bun is designes as a drop-in replacement for your current
+							JavaScript & TypeScript apps or scripts -- on your local
+							computer...
+						</p>
+						<a href="bun-blog.html" class="blogs__latest__link">Read more</a>
+						<hr class="blogs__latest__separator" />
+					</div>
+					<div class="blog-6 item">
+						<img
+							src="https://bun.sh/logo.svg"
+							alt="Bun compiler logo"
+							class="blogs__latest__img"
+						/>
+						<h3 class="blogs__latest__subtitle">Blogpost Title</h3>
+						<p class="blogs__latest__text">
+							Bun is a modern JavaScript runtime like Node or Deno. It was built
+							from scratch to focus on three main things:<br />
+						</p>
+						<ul class="blogs__latest__list">
+							<li class="blogs__latest__text">
+								Start fast (it has the edge in mind)
+							</li>
+							<li class="blogs__latest__text">
+								New leves of performance (extending JavaScriptCore, the engine).
+							</li>
+							<li class="blogs__latest__text">
+								Being a great and complete tool (bundler, transpiler, package
+								manager).
+							</li>
+						</ul>
+						<p class="blogs__latest__text">
+							Bun is designes as a drop-in replacement for your current
+							JavaScript & TypeScript apps or scripts -- on your local
+							computer...
+						</p>
+						<a href="bun-blog.html" class="blogs__latest__link">Read more</a>
+						<hr class="blogs__latest__separator" />
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="footer__top">
+				<a href="https://github.com/efrenruizrubio" target="_blank">
+					<img
+						class="footer__top__icon"
+						src="../assets/icons/github-svgrepo-com.svg"
+						alt="GitHub Logo"
+					/>
+				</a>
+				<a href="https://www.facebook.com/efren.ruizrubio.31" target="_blank">
+					<img
+						class="footer__top__icon"
+						src="../assets/icons/facebook-svgrepo-com.svg"
+						alt="Facebook Logo"
+					/>
+				</a>
+				<a
+					href="https://api.whatsapp.com/send?phone=5213322709940"
+					target="_blank"
+				>
+					<img
+						class="footer__top__icon"
+						src="../assets/icons/whatsapp-svgrepo-com.svg"
+						alt="WhatsApp Logo"
+					/>
+				</a>
+				<a href="https://www.linkedin.com/in/efren-ruiz-rubio/" target="_blank">
+					<img
+						class="footer__top__icon"
+						src="../assets/icons/linkedin-svgrepo-com.svg"
+						alt="LinkedIn Logo"
+					/>
+				</a>
+			</div>
+			<div class="footer__bottom">
+				<h2 class="footer__bottom__title">
+					<span>Made by</span>
+					<a
+						class="footer__bottom__link"
+						href="https://github.com/efrenruizrubio/efrenruizrubio.github.io/"
+						target="_blank"
+						>Efr&eacute;n Ru&iacute;z.</a
+					>
+				</h2>
+			</div>
+		</footer>
+	</body>
+</html>
