@@ -245,6 +245,25 @@ section {
 	text-align: center;
 }
 
+.translate-button {
+	padding: 1rem;
+	color: var(--secondary-blue-color);
+	background: none;
+	border: 1px solid var(--secondary-border-color);
+	border-radius: 1rem;
+}
+
+.translate-button:hover {
+	transform: scale(1.1);
+	transition: all 0.2s ease-in-out;
+	cursor: pointer;
+}
+
+.translate-button:active {
+	color: var(--primary-green-color);
+	border-color: var(--primary-green-color);
+}
+
 .introduction__salute {
 	margin: 2rem 0;
 	font-size: 1.6rem;
