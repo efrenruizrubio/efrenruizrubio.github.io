@@ -246,7 +246,7 @@ section {
 }
 
 .translate-button {
-	width: 25%;
+	width: 65%;
 	align-self: center;
 	padding: 1rem;
 	color: var(--secondary-blue-color);

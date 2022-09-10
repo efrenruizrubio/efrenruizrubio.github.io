@@ -4,32 +4,36 @@ const projects = [
 		description:
 			"It's an app that makes use of the HTML Drag and Drop API. The user drops the answer in the question container, and after having all the questions answered, the user can check the results for the answers provided.",
 		tags: ["VS Code", "Vite", "Drag & Drop", "HTML", "CSS", "Responsive"],
-		id: "philosophical-project",
+		link: "https://corrientes-filosoficas.netlify.app/",
 		background: `linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),url("https://firebasestorage.googleapis.com/v0/b/assets-5194e.appspot.com/o/philosophical-quiz.webp?alt=media&token=80bfd7fe-6460-42a5-8349-87c8c4a48440")`,
+		id: "philosophical-project",
 	},
 	{
 		title: "Invoice Generator",
 		description:
 			"It's a web app that its main function is to generate PDF's with input given by the user, which can be given by input devices like the Keyboard or a CSV file. Also it's able to store the user's account into a database which is needed for generating a history with all of the invoices generated.",
 		tags: ["VS Code", "React", "Material UI", "PHP"],
-		id: "invoice-project",
+		link: "https://github.com/efrenruizrubio/Invoices_Generator",
 		background: `linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),url("https://firebasestorage.googleapis.com/v0/b/assets-5194e.appspot.com/o/facturas.webp?alt=media&token=299e2a82-0972-4fcf-88d9-efac4bd79c1f")`,
+		id: "invoice-project",
 	},
 	{
 		title: "Personal Blog",
 		description:
 			"It's a project that I designed to learn more about front end development. I'll keep it updated as long as I'm motivated. It's simple, but it uses good practices in HTML and CSS, and it's one of my first pages fully responsive.",
 		tags: ["VS Code", "HTML", "CSS", "Responsive Design"],
-		id: "blog-project",
+		link: "https://efrenruizrubio.github.io/blog/",
 		background: `linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),url("https://firebasestorage.googleapis.com/v0/b/assets-5194e.appspot.com/o/blog.webp?alt=media&token=ffbd7fcd-c82b-438f-9ef0-7a2a176595b4")`,
+		id: "blog-project",
 	},
 	{
 		title: "Batatabit",
 		description:
 			"This is a landing page for a exchange company, it's made with HTML and CSS purely and its design is implemented with a mindset of mobile-first.",
 		tags: ["VS Code", "HTML", "CSS", "Responsive Design"],
-		id: "batatabit-project",
+		link: "https://efrenruizrubio-mobile-first-project.netlify.app/",
 		background: `linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),url("https://firebasestorage.googleapis.com/v0/b/assets-5194e.appspot.com/o/batatabit.webp?alt=media&token=7118952b-7b16-4f28-9d99-0d94b1e874d3")`,
+		id: "batatabit-project",
 	},
 ];
 
@@ -49,6 +53,8 @@ const createCards = () => {
 		cardContainer.id = el.id;
 		cardContainer.style.backgroundImage = el.background;
 		cardTitle.innerText = el.title;
+		cardTitle.href = el.link;
+		cardTitle.target = "_blank";
 		cardDescription.innerText = el.description;
 		el.tags.forEach((tag) => {
 			const tagElement = document.createElement("li");
