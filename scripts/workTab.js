@@ -11,6 +11,7 @@ const jobs = [
 			"Maintained an existing API developed with PHP hosted in a remote server that allows the communication of a ERP app for CNI Consultores.",
 			"Developed components for the frontend of the ERP app using React with Material UI.",
 		],
+		class: "axo",
 		id: "Axo",
 	},
 	{
@@ -21,6 +22,7 @@ const jobs = [
 			"I was an Agent for Comcast, specifically to the division of Xfinity. Using software from the company, I used to help the customers in an English Care Campaign",
 			"Resolved issues with the customer's services, such as telephone, cable and internet. Also helped them in issues with their bills.",
 		],
+		class: "teleperformance",
 		id: "Teleperformance",
 	},
 ];
@@ -40,6 +42,7 @@ const assignJobs = () => {
 
 		position.innerText = item.position;
 		position.classList.add("experience__slider__item__title");
+		position.id = item.id;
 
 		date.innerText = item.date;
 		date.classList.add("experience__slider__item__date");
@@ -50,7 +53,10 @@ const assignJobs = () => {
 		item.description.forEach((description) => {
 			const listItem = document.createElement("li");
 			listItem.innerText = description;
-			listItem.classList.add("experience__slider__item__list__element");
+			listItem.classList.add(
+				"experience__slider__item__list__element",
+				item.class,
+			);
 			list.append(listItem);
 		});
 
