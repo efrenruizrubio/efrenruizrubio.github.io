@@ -475,7 +475,6 @@ section {
 	width: 80%;
 	min-width: 256px;
 	padding: 16px;
-	margin-bottom: 2rem;
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -492,23 +491,11 @@ section {
 }
 
 .work__card__description {
-	font-size: 1.6rem;
 	margin: 2rem 0;
+	font-size: 1.6rem;
 	font-family: "Ubuntu", sans-serif;
+	text-align: center;
 	color: var(--secondary-grey-color);
-}
-
-.card-1 {
-	background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
-		url("https://firebasestorage.googleapis.com/v0/b/assets-5194e.appspot.com/o/facturas.webp?alt=media&token=299e2a82-0972-4fcf-88d9-efac4bd79c1f");
-}
-.card-2 {
-	background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
-		url("https://firebasestorage.googleapis.com/v0/b/assets-5194e.appspot.com/o/blog.webp?alt=media&token=ffbd7fcd-c82b-438f-9ef0-7a2a176595b4");
-}
-.card-3 {
-	background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
-		url("https://firebasestorage.googleapis.com/v0/b/assets-5194e.appspot.com/o/batatabit.webp?alt=media&token=7118952b-7b16-4f28-9d99-0d94b1e874d3");
 }
 
 .work__card__list {

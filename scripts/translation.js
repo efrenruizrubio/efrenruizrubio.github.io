@@ -18,9 +18,10 @@ const translateToSpanish = () => {
 	const teleperformanceDescription =
 		document.querySelectorAll(".teleperformance");
 
-	const firstCard = document.querySelector(".card-1");
-	const secondCard = document.querySelector(".card-2");
-	const thirdCard = document.querySelector(".card-3");
+	const firstCard = document.querySelector("#philosophical-project");
+	const secondCard = document.querySelector("#invoice-project");
+	const thirdCard = document.querySelector("#blog-project");
+	const fourthCard = document.querySelector("#batatabit-project");
 	const contactText = document.querySelector(".contact__text");
 	const contactButton = document.querySelector(".contact__button");
 	const credits = document.querySelector(".footer__bottom__title");
@@ -53,19 +54,19 @@ const translateToSpanish = () => {
 	teleperformanceDescription[1].innerText =
 		"Resolvía problemas en los servicios de los clientes, como teléfono, cable e internet. También les clarificaba sus dudas con respecto a sus facturas.";
 
-	firstCard.children[0].children[0].innerText = "Generador de Facturas";
+	/* firstCard.children[0].children[0].innerText = "Generador de Facturas";
 	firstCard.children[0].children[0].classList.add("work__card__title__link");
 	secondCard.children[0].children[0].innerText = "Blog Personal";
-	secondCard.children[0].children[0].classList.add("work__card__title__link");
+	secondCard.children[0].children[0].classList.add("work__card__title__link"); */
 
-	firstCard.children[1].innerText =
+	/* firstCard.children[1].innerText =
 		"Es una aplicación web que genera PDF's con datos de entrada otorgados por el usuario, pueden ser obtenidos a través de dispositivos de entrada, como el teclado o un archivo CSV. Además, permite guardar la información del usuario dentro de una base de datos, la cual es necesaria para acceder a un historial de las facturas generadas.";
 
 	secondCard.children[1].innerText =
 		"Es un proyecto que diseñé para aprender más acerca del desarrollo frontend. Lo mantendré actualizado mientras encuentre motivación para escribir blogs. Es sencillo, pero utiliza buenas prácticas de HTML y CSS, y es una de mis primeras páginas 100% responsiva.";
 
 	thirdCard.children[1].innerText =
-		"Es una landing page para una compañía de intercambio de criptomonedas, y está hecha puramente con HTML y CSS. Diseñada con la metodología de mobile-first.";
+		"Es una landing page para una compañía de intercambio de criptomonedas, y está hecha puramente con HTML y CSS. Diseñada con la metodología de mobile-first."; */
 
 	contactText.innerText =
 		"Actualmente estoy en búsqueda, así que mi bandeja de entrada está abierta, siéntete libre de contactarme si tienes una propuesta de trabajo o simplemente quieres saludar.";

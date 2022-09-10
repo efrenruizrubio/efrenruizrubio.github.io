@@ -17,6 +17,10 @@
 	margin: 0 2rem;
 }
 
+.translate-button {
+	width: 30%;
+}
+
 .experience__content__left {
 	display: flex;
 	justify-content: start;
