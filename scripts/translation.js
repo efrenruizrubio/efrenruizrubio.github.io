@@ -21,9 +21,7 @@ const translateToSpanish = () => {
 		headerMenuLinks.children[2].firstElementChild.innerText = "Proyectos";
 	hamburgerMenuLinks.children[3].children[1].innerText =
 		headerMenuLinks.children[3].firstElementChild.innerText = "Contacto";
-	/* hamburgerMenuLinks.children[1].children[1].innerText = "Experiencia";
-	hamburgerMenuLinks.children[2].children[1].innerText = "Proyectos";
-	hamburgerMenuLinks.children[3].children[1].innerText = "Contacto"; */
+
 	menuButton.innerText = "Currículum";
 
 	const summary = document.querySelector(".introduction__text");
