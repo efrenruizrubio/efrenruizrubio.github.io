@@ -4,15 +4,26 @@ const translateToSpanish = () => {
 	const salute = document.querySelector(".introduction__salute");
 	const description = document.querySelector(".introduction__description");
 
-	const menuLinks = document.querySelector(".header__aside__list");
+	const hamburgerMenuLinks = document.querySelector(".header__aside__list");
 	const menuButton = document.querySelector(
 		".header__aside__list__item__button",
 	);
 
-	menuLinks.children[0].children[1].innerText = "Acerca de mí";
-	menuLinks.children[1].children[1].innerText = "Experiencia";
-	menuLinks.children[2].children[1].innerText = "Proyectos";
-	menuLinks.children[3].children[1].innerText = "Contacto";
+	const headerMenuLinks = document.querySelector(".header__nav__list");
+
+	console.log(headerMenuLinks.children[0].firstElementChild);
+
+	hamburgerMenuLinks.children[0].children[1].innerText =
+		headerMenuLinks.children[0].firstElementChild.innerText = "Acerca";
+	hamburgerMenuLinks.children[1].children[1].innerText =
+		headerMenuLinks.children[1].firstElementChild.innerText = "Experiencia";
+	hamburgerMenuLinks.children[2].children[1].innerText =
+		headerMenuLinks.children[2].firstElementChild.innerText = "Proyectos";
+	hamburgerMenuLinks.children[3].children[1].innerText =
+		headerMenuLinks.children[3].firstElementChild.innerText = "Contacto";
+	/* hamburgerMenuLinks.children[1].children[1].innerText = "Experiencia";
+	hamburgerMenuLinks.children[2].children[1].innerText = "Proyectos";
+	hamburgerMenuLinks.children[3].children[1].innerText = "Contacto"; */
 	menuButton.innerText = "Currículum";
 
 	const summary = document.querySelector(".introduction__text");
