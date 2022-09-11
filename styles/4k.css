@@ -24,7 +24,11 @@
 }
 
 .introduction {
-	margin: 50rem 0;
+	margin: 40rem 0;
+}
+
+.translate-button {
+	margin-bottom: 10rem;
 }
 
 .numbered-topic {
@@ -88,6 +92,7 @@
 
 .work__card__description {
 	font-size: 3rem;
+	line-height: 4.5rem;
 }
 
 .work__card__list {
@@ -102,6 +107,7 @@
 	margin-top: 10rem;
 	width: 30%;
 	font-size: 3.4rem;
+	line-height: 4.5rem;
 }
 
 .contact__button {

@@ -11,6 +11,11 @@
 	font-size: 1.8rem;
 	margin: 0 2rem;
 }
+
+.translate-button {
+	font-size: 2rem;
+}
+
 .about__content {
 	display: flex;
 }

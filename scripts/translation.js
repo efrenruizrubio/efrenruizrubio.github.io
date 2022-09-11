@@ -3,15 +3,30 @@ const translateButton = document.querySelector(".translate-button");
 const translateToSpanish = () => {
 	const salute = document.querySelector(".introduction__salute");
 	const description = document.querySelector(".introduction__description");
+
+	const menuLinks = document.querySelector(".header__aside__list");
+	const menuButton = document.querySelector(
+		".header__aside__list__item__button",
+	);
+
+	menuLinks.children[0].children[1].innerText = "Acerca de mí";
+	menuLinks.children[1].children[1].innerText = "Experiencia";
+	menuLinks.children[2].children[1].innerText = "Proyectos";
+	menuLinks.children[3].children[1].innerText = "Contacto";
+	menuButton.innerText = "Currículum";
+
 	const summary = document.querySelector(".introduction__text");
 	const summaryChilds = Array.from(summary.children);
 	const introductionContactButton = document.querySelector(
 		".introduction__contact-button",
 	);
+
 	const sectionTitles = Array.from(
 		document.querySelectorAll(".numbered-topic__text"),
 	);
+
 	const aboutDescription = document.querySelector(".about__description");
+
 	const axoDescription = document.querySelectorAll(".axo");
 	const axoPosition = document.getElementById("Axo");
 	const teleperformancePosition = document.getElementById("Teleperformance");
@@ -22,13 +37,16 @@ const translateToSpanish = () => {
 	const secondCard = document.querySelector("#invoice-project");
 	const thirdCard = document.querySelector("#blog-project");
 	const fourthCard = document.querySelector("#batatabit-project");
+
 	const contactText = document.querySelector(".contact__text");
 	const contactButton = document.querySelector(".contact__button");
 	const credits = document.querySelector(".footer__bottom__title");
 
 	salute.innerText = "Hola, mi nombre es";
 	description.innerText = `Soy un Ingeniero de Software actualmente enfocándome en desarrollo Frontend.`;
+
 	summary.innerHTML = `Tengo <span id=${summaryChilds[0].id}>${summaryChilds[0].innerText}</span> años y sigo estudiando en la <a href="${summaryChilds[1].href}" target="_blank">${summaryChilds[1].innerText}</a>, y, al mismo tiempo, estoy tomando cursos en la plataforma online <a href="${summaryChilds[2].href}" target="_blank">${summaryChilds[2].innerText}</a>, la cual me ayuda a nunca parar de aprender.`;
+
 	introductionContactButton.innerText = "Contacto";
 
 	sectionTitles[0].innerHTML = "Acerca de mí&nbsp;";
@@ -54,19 +72,26 @@ const translateToSpanish = () => {
 	teleperformanceDescription[1].innerText =
 		"Resolvía problemas en los servicios de los clientes, como teléfono, cable e internet. También les clarificaba sus dudas con respecto a sus facturas.";
 
-	/* firstCard.children[0].children[0].innerText = "Generador de Facturas";
-	firstCard.children[0].children[0].classList.add("work__card__title__link");
-	secondCard.children[0].children[0].innerText = "Blog Personal";
-	secondCard.children[0].children[0].classList.add("work__card__title__link"); */
+	firstCard.children[0].innerText = "Quiz de Filosofía";
+	firstCard.children[0].classList.add("work__card__title__link");
+	secondCard.children[0].innerText = "Generador de Facturas";
+	secondCard.children[0].classList.add("work__card__title__link");
+	thirdCard.children[0].innerText = "Blog Personal";
+	thirdCard.children[0].classList.add("work__card__title__link");
+	fourthCard.children[0].innerText = "Batatabit";
+	fourthCard.children[0].classList.add("work__card__title__link");
 
-	/* firstCard.children[1].innerText =
-		"Es una aplicación web que genera PDF's con datos de entrada otorgados por el usuario, pueden ser obtenidos a través de dispositivos de entrada, como el teclado o un archivo CSV. Además, permite guardar la información del usuario dentro de una base de datos, la cual es necesaria para acceder a un historial de las facturas generadas.";
+	firstCard.children[1].innerText =
+		"Es una aplicación que hace uso de la API de HTML Drag and Drop. El usuario arrastra y suelta las respuestas en el contenedor de preguntas, después de soltar todas las respuestas, el usuario puede checar sus resultados de las respuestar que otorgó.";
 
 	secondCard.children[1].innerText =
-		"Es un proyecto que diseñé para aprender más acerca del desarrollo frontend. Lo mantendré actualizado mientras encuentre motivación para escribir blogs. Es sencillo, pero utiliza buenas prácticas de HTML y CSS, y es una de mis primeras páginas 100% responsiva.";
+		"Es una aplicación web que genera PDF's con datos de entrada otorgados por el usuario, pueden ser obtenidos a través de dispositivos de entrada, como el teclado o un archivo CSV. Además, permite guardar la información del usuario dentro de una base de datos, la cual es necesaria para acceder a un historial de las facturas generadas.";
 
 	thirdCard.children[1].innerText =
-		"Es una landing page para una compañía de intercambio de criptomonedas, y está hecha puramente con HTML y CSS. Diseñada con la metodología de mobile-first."; */
+		"Es un proyecto que diseñé para aprender más acerca del desarrollo frontend. Lo mantendré actualizado mientras encuentre motivación para escribir blogs. Es sencillo, pero utiliza buenas prácticas de HTML y CSS, y es una de mis primeras páginas 100% responsiva.";
+
+	fourthCard.children[1].innerText =
+		"Es una landing page para una compañía de intercambio de criptomonedas, y está hecha puramente con HTML y CSS. Diseñada con la metodología de mobile-first.";
 
 	contactText.innerText =
 		"Actualmente estoy en búsqueda, así que mi bandeja de entrada está abierta, siéntete libre de contactarme si tienes una propuesta de trabajo o simplemente quieres saludar.";

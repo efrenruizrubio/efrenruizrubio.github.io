@@ -280,13 +280,14 @@ section {
 
 .introduction__description {
 	margin: 1.5rem 0;
-	font-size: 3 0.5rem;
+	font-size: 2.8rem;
 	color: var(--secondary-grey-color);
 }
 
 .introduction__text {
 	margin: 1rem 0 3rem 0;
 	font-size: 1.6rem;
+	line-height: 2.5rem;
 	color: var(--secondary-grey-color);
 }
 
@@ -452,6 +453,7 @@ section {
 .experience__slider__item__list__element {
 	margin: 2rem 0;
 	font-size: 1.6rem;
+	line-height: 2.5rem;
 	color: var(--secondary-grey-color);
 }
 
@@ -496,6 +498,7 @@ section {
 	margin: 2rem 0;
 	font-size: 1.6rem;
 	font-family: "Ubuntu", sans-serif;
+	line-height: 2.5rem;
 	text-align: center;
 	color: var(--secondary-grey-color);
 }
@@ -528,6 +531,7 @@ section {
 	width: 80%;
 	min-width: 256px;
 	font-family: "Ubuntu", sans-serif;
+	line-height: 2.5rem;
 	color: var(--secondary-grey-color);
 }
 
