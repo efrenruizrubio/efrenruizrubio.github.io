@@ -110,7 +110,7 @@ const translateToSpanish = () => {
 
 	if (translateButton.innerText === "Translate to English") {
 		history.scrollRestoration = "manual";
-		window.location.reload();
+		window.location.assign("https://efrenruizrubio.github.io");
 	}
 
 	translateButton.innerText = "Translate to English";
