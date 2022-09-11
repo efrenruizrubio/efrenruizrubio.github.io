@@ -37,7 +37,6 @@
 }
 
 .work__card__container {
-	place-items: start;
 	grid-template-columns: repeat(2, 1fr);
 	gap: 4rem;
 	grid-auto-rows: 1fr;

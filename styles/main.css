@@ -249,10 +249,11 @@ section {
 	width: 65%;
 	align-self: center;
 	padding: 1rem;
-	color: var(--secondary-blue-color);
-	background: none;
 	border: 1px solid var(--secondary-border-color);
 	border-radius: 1rem;
+	background: none;
+	color: var(--secondary-blue-color);
+	font-size: 1.4rem;
 }
 
 .translate-button:hover {
@@ -474,7 +475,7 @@ section {
 	align-items: center;
 	width: 80%;
 	min-width: 256px;
-	padding: 16px;
+	padding: 1.6rem;
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -483,6 +484,7 @@ section {
 .work__card__container {
 	display: grid;
 	place-items: center;
+	gap: 3rem;
 }
 
 .work__card__title {
