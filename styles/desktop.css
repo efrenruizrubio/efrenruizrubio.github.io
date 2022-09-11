@@ -16,3 +16,7 @@
 	margin: 35rem 0;
 	padding: 0 20rem;
 }
+
+.introduction__text {
+	line-height: 4rem;
+}
