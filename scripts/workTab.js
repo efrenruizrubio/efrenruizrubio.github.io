@@ -5,7 +5,7 @@ const jobs = [
 	{
 		company: "Axo Systems",
 		position: "FullStack Developer",
-		date: "May 2021 - Mar 2022",
+		date: "Feb 2021 - Dec 2021",
 		description: [
 			"Developed a website for CNI Consultores using Wordpress, that it's main purpose is to be a blog to spread information about finance and business, and also works as a platform for selling courses and webinars",
 			"Maintained an existing API developed with PHP hosted in a remote server that allows the communication of a ERP app for CNI Consultores.",
